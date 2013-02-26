@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://strudelfolhadinho.com.br/</loc>
+  <mobile:mobile/>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>1.00</priority>
+  <image:image>
+    <image:title>Logo Strudel Folhadinho</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/logo-strudel-folhadinho.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Fatia Strudel de Maçã</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-2.png</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/strudel-de-maca.html</loc>
+  <mobile:mobile/>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>1.00</priority>
+  <image:image>
+    <image:title>Strudel de Maçã com Sorvete</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-maca-com-sorvete.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Strudel de Maçã foto pequena</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-thumb.jpg</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/strudel-de-doce-de-leite.html</loc>
+  <mobile:mobile/>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/strudel-de-banana.html</loc>
+  <mobile:mobile/>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/como-e-feito.html</loc>
+  <mobile:mobile/>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/como-comprar.html</loc>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/carta-de-strudel.html</loc>
+  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+</urlset>
