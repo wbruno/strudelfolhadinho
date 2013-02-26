@@ -34,8 +34,6 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 			NOW()
 		)";
 
-	//echo $sql;
-
 	$mysqli->query($sql);
 
 	$msg = 'Hummm! Já está sentindo o cheirinho por aí? Vamos conferir os detalhes do seu pedido e já, já entraremos em contato e enviaremos seu Strudel';
