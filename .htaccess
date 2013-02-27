@@ -10,3 +10,9 @@ RewriteRule (.*) http://strudelfolhadinho.com.br/$1 [R=301,L]
 RewriteRule ^strudel/?$ http://strudelfolhadinho.com.br/strudel-de-maca.html [R,NC,L]
 
 ErrorDocument 404 /404.html
+
+
+
+<Files images\/strudel-de-maca-2.png>
+Header add Link '<http://strudelfolhadinho.com.br/index.html>; rel="canonical"'
+</Files>
