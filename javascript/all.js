@@ -36,7 +36,7 @@
 (function(w, d, undefined) {
 	"use strict";
 
-	/* Máscaras ER */
+	/* mascaras er */
 	var v_obj, v_fun;
 	function getId( el ){
 		return d.getElementById(el);
