@@ -275,7 +275,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 /* responsivo */
 @media only screen and (max-width: 960px){
 	.column-full { width: auto; padding: 0 20px; }
-	.column-half { width: 50%; }
+	.column-half { width: auto; float: none; }
 	.column-third { width: 30%; }
 	.column-sixth { width: 15%; }
 	.column-third .column-sixth { width: 50%; }
@@ -352,6 +352,10 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	.logo-img { max-width: 80% !important; margin: 0 auto; display: block; }
 
 	.copy-text { font-size: 11px; }
+
+	#wistia_0727g9uun1_grid_wrapper { height: 200px !important;}
+	#wistia_0727g9uun1,
+	#wistia_0727g9uun1_grid_main { width: 300px !important; }
 }
 @media only screen and (max-width: 320px){
 	.column-half { width: auto; float: none; }
