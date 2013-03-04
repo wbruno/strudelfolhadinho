@@ -271,6 +271,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	position: absolute;
 	top: 0; left: 0;
 }
+.product-img { position: relative; }
 
 /* responsivo */
 @media only screen and (max-width: 960px){
