@@ -21,7 +21,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 
 
 	$sql = "INSERT INTO pedido 
-		(id, nome, telefone, email, cep, numero, detalhes, sabor, data) 
+		(id, nome, telefone, email, cep, numero, detalhes, sabor, data, url) 
 		VALUES(
 			NULL,
 			'".getPost('nome')."',
@@ -31,7 +31,8 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 			'".getPost('numero')."',
 			'".getPost('detalhes')."',
 			'".$sabor."',
-			NOW()
+			NOW(),
+			'".$_SERVER['REQUEST_URI']."'
 		)";
 
 	$mysqli->query($sql);

@@ -3,7 +3,7 @@
 class Seo
 {
 	private static $key_default = 'strudel, apfelstrudel, strudel folhadinho, strudel em são paulo';
-	private static $desc_default = 'Faça Seu Pedido OnLine de Strudels em Diversos Sabores. Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227';
+	private static $desc_default = 'Faça Seu Pedido OnLine de Strudel em Diversos Sabores. Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227';
 	
 	public static function metas()
 	{
@@ -49,16 +49,16 @@ class Seo
 				$arr['canonical'] = 'http://strudelfolhadinho.com.br/strudel-de-banana.html';
 				break;
 				
-			case 'class="carta-de-strudel"':
-				$arr['desc'] = 'Carta com os sabores dos Strudels. '.self::$desc_default;
+			case 'class="cardapio"':
+				$arr['desc'] = 'Cardápio dos Strudels. '.self::$desc_default;
 				$arr['key'] = 'diversos sabores de strudel, '.self::$key_default;
-				$arr['title'] = 'Carta de Strudel - ';
-				$arr['canonical'] = 'http://strudelfolhadinho.com.br/carta-de-strudel.html';
+				$arr['title'] = 'Cardápio de Strudel - ';
+				$arr['canonical'] = 'http://strudelfolhadinho.com.br/cardapio.html';
 				break;
 				
 			case 'class="home"':
 				$arr['desc'] = 'Strudel de Maçã em São Paulo. '.self::$desc_default;
-				$arr['key'] = 'apfel strudel, '.self::$key_default;
+				$arr['key'] = 'apfel strudel, strudel de maça, '.self::$key_default;
 				$arr['title'] = '';
 				$arr['canonical'] = 'http://strudelfolhadinho.com.br/';
 				break;
