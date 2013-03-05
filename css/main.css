@@ -229,7 +229,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 /* hreview */
 .hreview {
 	font-size: 16px;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
 .hreview p { margin-bottom: 10px; }
 .hreview .description { font-style: italic; }
