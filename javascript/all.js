@@ -139,14 +139,17 @@
 		$form.onsubmit = function(){
 			if( $telefone.value==='' ){
 				alert('Digite seu telefone para que eu possa te ligar e confirmar teu pedido!!');
+				$telefone.focus();
 				return false;
 			}
 			if( $cep.value==='' ){
 				alert('Informe o cep, para eu conseguir te entregar');
+				$cep.focus();
 				return false;
 			}
 			if( $email.value==='' ){
 				alert('Me diga seu email =)');
+				$email.focus();
 				return false;
 			}
 		};
