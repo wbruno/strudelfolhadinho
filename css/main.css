@@ -42,6 +42,7 @@ p { margin-bottom: 25px; line-height: 1.4em; }
 /* form */
 label { display: block; margin-bottom: 17px; }
 label span { display: block; margin-bottom: 8px; text-align: left; }
+.label-sabor { margin-bottom: 10px; }
 .input-text {
 	width: 85%;
 	height: 45px; line-height: 45px; 
@@ -62,7 +63,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	text-align: center; color: #5d1a69;
 	text-transform: uppercase; font-weight: bold;
 	font-size: 22px;
-	margin-top: 53px;
+	margin-top: 20px;
 	cursor: pointer;
 }
 .input-submit:hover,

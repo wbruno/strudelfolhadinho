@@ -87,15 +87,35 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 				</label>
 				<label for="detalhes">
 					<span>Detalhes</span>
-					<textarea name="detalhes" cols="20" rows="3" id="detalhes" class="input-text textarea" placeholder="Me conte detalhes do seu pedido"></textarea>
+					<textarea name="detalhes" cols="20" rows="3" id="detalhes" class="input-text textarea"></textarea>
 				</label>
 			</fieldset>
 			<fieldset class="fright column-third">
 				<label class="form-legend">Quais sabores você quer?</label>
-				<label for="sabor1"><input type="checkbox" name="sabor[]" id="sabor1" value="strudel-maca-verde" /> Maçã Verde - R$50,00</label>
-				<label for="sabor2"><input type="checkbox" name="sabor[]" id="sabor2" value="strudel-banana" /> Banana - R$45,00</label>
-				<label for="sabor3"><input type="checkbox" name="sabor[]" id="sabor3" value="strudel-doce-de-leite" /> Doce de Leite - R$50,00</label>
-				<label for="sabor4"><input type="checkbox" name="sabor[]" id="sabor4" value="strudel-chocolate" /> Chocolate - R$50,00</label>
+
+				<label for="sabor1" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor1" value="strudel-maca-verde" /> Maçã Verde - R$50,00
+				</label>
+
+				<label for="sabor2" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor2" value="strudel-banana" /> Banana - R$45,00
+				</label>
+
+				<label for="sabor3" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor3" value="strudel-doce-de-leite" /> Doce de Leite - R$50,00
+				</label>
+
+				<label for="sabor4" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor4" value="strudel-chocolate" /> Chocolate - R$50,00
+				</label>
+
+				<label for="sabor5" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor5" value="strudel-frango-com-catupiry" /> Frango com Catupiry - R$70,00
+				</label>
+
+				<label for="sabor6" class="label-sabor">
+					<input type="checkbox" name="sabor[]" id="sabor6" value="strudel-palmito" /> Frango Palmito - R$70,00
+				</label>
 
 				<label><input type="submit" name="enviar" value="Eu quero!" class="input-submit" /></label>
 			</fieldset>
