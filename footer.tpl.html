@@ -14,7 +14,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 	if( isset( $_POST['sabor'] ) )
 		$message .= 'Fez um pedido dos strudels: '.implode( ', ', $_POST['sabor'] ).'<br /><br />';
 
-	$mysqli = new mysqli('186.202.152.29', 'wbruno8', 'quimica17', 'wbruno8');
+	$mysqli = new mysqli(SERVER, USER, PASS, DB);
 
 
 	if( isset($_POST['sabor'] ) ) $sabor = implode(', ', $_POST['sabor']);

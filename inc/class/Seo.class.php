@@ -6,7 +6,7 @@ class Seo
 	private static $key_default = 'strudel, apfelstrudel, strudel folhadinho, strudel em são paulo';
 	private static $desc_default = 'Faça Seu Pedido OnLine de Strudel em Diversos Sabores. Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227';
 	
-	private static $url = 'http://strudelfolhadinho.local';
+	private static $url = 'http://strudelfolhadinho.com.br';
 
 	public static function metas()
 	{
