@@ -3,6 +3,7 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
       xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -10,7 +11,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/</loc>
   <mobile:mobile/>
-  <lastmod>2013-03-01T19:30:32+00:00</lastmod>
+  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>1.00</priority>
   <image:image>
     <image:title>Logo Strudel Folhadinho</image:title>
@@ -24,7 +25,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-maca.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.90</priority>
   <image:image>
     <image:title>Strudel de Maçã com Sorvete</image:title>
@@ -38,29 +39,90 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-doce-de-leite.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.90</priority>
+  <image:image>
+    <image:title>Strudel de Doce de Leite</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-doce-de-leite.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Bola de Massa do Strudel</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel-2.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Recheio do Strudel de Doce de Leite</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/recheando-strudel-de-doce-de-leite.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Enrolando o strudel de doce de leite</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/fechando-strudel-doce-de-leite.jpg</image:loc>
+  </image:image>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-banana.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
+  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.90</priority>
+  <image:image>
+    <image:title>Strudel de Banana</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana.png</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Strudel de Banana foto pequena</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana-thumb.jpg</image:loc>
+  </image:image>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/strudel-de-palmito.html</loc>
+  <mobile:mobile/>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>http://strudelfolhadinho.com.br/strudel-de-frango-com-catupiry.html</loc>
+  <mobile:mobile/>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/como-e-feito.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
   <priority>0.75</priority>
+  <image:image>
+    <image:title>Bolas da Massa Folhada do Strudel</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Preparo da massa folhada do Strudel de Maçã</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
+  </image:image>
+  <image:image>
+    <image:title>Tira de strudel de maçã antes de ir ao forno</image:title>
+    <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
+  </image:image>
+
+  <video:video>
+    <video:thumbnail_loc>http://strudelfolhadinho.com.br/images/thumbnail-video-massa-folhada.jpg</video:thumbnail_loc> 
+    <video:title>Preparo da Massa Folhada do Strudel</video:title>
+    <video:description>Preparo artesanal da massa folhada do original strudel de maçã. Receita tradicional da massa do strudel de  maçã. É assim que a Strudel Folhadinho faz a massa dos strudels que comercializamos.</video:description>
+    <video:content_loc>http://fast.wistia.net/embed/iframe/0727g9uun1</video:content_loc>
+    <video:player_loc allow_embed="yes" autoplay="ap=1">http://fast.wistia.net/embed/iframe/0727g9uun1?controlsVisibleOnLoad=true&amp;  version=v1&amp;videoHeight=360&amp;videoWidth=640&amp;volumeControl=true</video:player_loc>
+    <video:duration>1800</video:duration>
+    <video:expiration_date>2014-11-05T19:20:30+08:00</video:expiration_date>
+    <video:rating>4.2</video:rating> 
+    <video:view_count>31</video:view_count>    
+    <video:publication_date>2013-03-01T19:20:30+08:00</video:publication_date>
+    <video:family_friendly>yes</video:family_friendly>   
+  
+    <video:uploader info="https://www.facebook.com/StrudelFolhadinho">Strudel Folhadinho</video:uploader>
+    <video:live>no</video:live>
+  </video:video> 
+
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/como-comprar.html</loc>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
-  <priority>0.75</priority>
+  <priority>0.50</priority>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/carta-de-strudel.html</loc>
-  <lastmod>2013-02-08T23:42:32+00:00</lastmod>
-  <priority>0.75</priority>
+  <priority>0.50</priority>
 </url>
 </urlset>
