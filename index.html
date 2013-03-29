@@ -25,29 +25,52 @@
 
 		<p>Hoje esta receita deliciosa é preparada com todo carinho pela <strong class="cursive purple">Strudel Folhadinho</strong> para você e sua família. Peça para saborear na sua casa:</p>
 
-		<div class="column-half fleft">
-			<h2>Strudel Doces:</h2>
-			<ul class="list">
-				<li>- O famoso <a href="strudel-de-maca.html" class="purple product-name" title="Strudel de Maçã"><strong>Strudel de Maçã</strong></a> (ou <span lang="de">ApfelStrudel</span>);</li>
+		<div class="column-half fleft box-flavor">
+			<h2 class="flavor-title">Strudel Doce:</h2>
+			<ul class="list flavor-list">
+				<li>- O famoso <a href="strudel-de-maca.html" class="purple product-name" title="Strudel de Maçã"><strong>Strudel de Maçã</strong></a> (ou <a href="apfelstrudel.html" class="gray" lang="de">ApfelStrudel</a>);</li>
 				<li>- O <a href="strudel-de-doce-de-leite.html" class="purple product-name" title="Strudel de Doce de Leite"><strong>Strudel de Doce de Leite</strong></a> e,</li>
 				<li>- O tropical <a href="strudel-de-banana.html" class="purple product-name">Strudel de Banana</a>.</li>
 			</ul>
 		</div><!-- .column-half -->
 
-		<div class="column-half fright">
-			<h2>Strudel Salgados:</h2>
-			<ul class="list">
-				<li>- O delicioso <a href="strudel-de-frango-com-catupiry.html" class="purple product-name" title="Strudel de Frango com Catupiry"><strong class="purple product-name">Strudel de Frango com Catupiry</strong></a> e,</li>
-				<li>- O requintado <a href="strudel-de-palmito.html" class="purple product-name" title="Strudel de Palmito"><strong class="purple product-name">Strudel de Palmito</strong></a>.</li>
+		<div class="column-half fright box-flavor">
+			<h2 class="flavor-title">Strudel Salgado:</h2>
+			<ul class="list flavor-list">
+				<li>- O delicioso <a href="strudel-de-frango-com-catupiry.html" class="purple product-name" title="Strudel de Frango com Catupiry"><strong class="purple product-name">Strudel de Frango com Catupiry</strong></a>;</li>
+				<li>- O requintado <a href="strudel-de-palmito.html" class="purple product-name" title="Strudel de Palmito"><strong class="purple product-name">Strudel de Palmito</strong></a> e,</li>
+				<li>- O saboroso <a href="strudel-de-bacalhau.html" class="purple product-name" title="Strudel de Bacalhau"><strong class="purple product-name">Strudel de Bacalhau</strong></a>.</li>
 			</ul>
 		</div><!-- .column-half -->
 		
-		<p class="cursive clear">Entragamos na cidade de São Paulo</p>
 
-		<p>Preencha o formulário abaixo para fazer o seu pedido. O frete custa R$10,00 para toda a cidade. Acima de 3 unidades, o frete é grátis.</p>
+		<div class="column-half fleft clear">
+			<p class="cursive clear">Entragamos na cidade de São Paulo</p>
 
-		<p class="clear"><small>* valores para a tira do strudel, que mede cerca de 35 centímetros.</small></p>
+			<p>Preencha o formulário abaixo para fazer o seu pedido. O frete custa R$10,00 para toda a cidade. Acima de 3 unidades, o frete é grátis.</p>
 
+			<p class="clear"><small>* valores para a tira do strudel, que mede cerca de 35 centímetros.</small></p>
+		</div><!-- .column-half -->
+
+		<section itemscope itemtype="http://schema.org/LocalBusiness" class="column-half fright">
+			<span itemprop="name" class="cursive purple">Strudel Folhadinho</span><br />
+			<span itemprop="description">Entregamos o original strudel de maçã(apfelstrudel) e outros sabores para toda a cidade de São Paulo.</span>
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<small itemprop="streetAddress">Rua Padre Jácome de Queiroz</small>
+				<small itemprop="addressLocality">São Paulo</small>, 
+				<small itemprop="addressRegion">SP</small>
+			</div>
+			Telefone: <span itemprop="telephone">
+<?php
+	if( $h>=7 && $h<13 ){
+		echo '<span title="ligue (11) 3782-2391">(11) 3782-2391</span>';
+	} else {
+		echo '<span title="ligue (11) 9 6309-9227">(11) 9 6309-9227</span>';
+	}
+?>
+			</span><br />
+			<span>strudelfolhadinho@gmail.com</span>
+		</section><!-- .column-half -->
 		
 		<div class="clear"></div>
 	</div><!-- .content -->

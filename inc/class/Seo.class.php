@@ -69,6 +69,20 @@ class Seo
 				$arr['canonical'] = self::$url . '/strudel-de-palmito.html';
 				break;
 				
+			case 'class="strudel-de-bacalhau"':
+				$arr['desc'] = 'Strudel de Bacalhau '.self::$desc_default;
+				$arr['key'] = 'strudel de bacalhau, '.self::$key_default;
+				$arr['title'] = 'Strudel de Bacalhau | '.self::$title_default;
+				$arr['canonical'] = self::$url . '/strudel-de-bacalhau.html';
+				break;
+				
+			case 'class="apfelstrudel"':
+				$arr['desc'] = 'Apfelstrudel, o original strudel de maçã. Receita tradicional hungara do apfelstrudel, conhecida nos países da Europa Central.';
+				$arr['key'] = 'apfelstrudel, '.self::$key_default;
+				$arr['title'] = 'Apfelstrudel | '.self::$title_default;
+				$arr['canonical'] = self::$url . '/apfelstrudel.html';
+				break;
+				
 			case 'class="cardapio"':
 				$arr['desc'] = 'Cardápio dos Strudels. '.self::$desc_default;
 				$arr['key'] = 'diversos sabores de strudel, '.self::$key_default;

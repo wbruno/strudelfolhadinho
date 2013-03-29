@@ -17,6 +17,7 @@ h1 { font-size: 40px; }
 
 .purple { color: #732a80; }
 .product-name { font-weight: bold; font-style: italic; }
+.gray { color: #444; }
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -48,13 +49,9 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	height: 45px; line-height: 45px; 
 	padding: 0 10px; border-radius: 5px;
 }
-.input-text:focus {
-	border: 3px solid #732A80;
-	height: 39px;
-}
 .input-small { width: 67%; }
 .textarea { height: 137px; }
-.textarea:focus { height: 131px; }
+
 .input-submit {
 	background: #98b530;
 	border-radius: 7px;
@@ -271,6 +268,20 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 	padding-right: 10px;
 	position: absolute;
 	top: 0; left: 0;
+}
+
+/* flavor */
+.box-flavor {
+	background: #eee;
+	height: 165px;
+	border-radius: 7px;
+	margin-bottom: 20px;
+}
+.flavor-title {
+	margin: 15px 20px;
+}
+.flavor-list {
+	margin: 0 20px;
 }
 
 /* responsivo */
