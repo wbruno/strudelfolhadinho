@@ -1,5 +1,5 @@
 <?php
-	include 'inc/init.inc.php';
+	include '../inc/init.inc.php';
 
 
 	$mysqli = new mysqli(SERVER, USER, PASS, DB);

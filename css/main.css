@@ -162,15 +162,15 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 #adcast {
 	background: #4e0d59;
 	color: #fff;
-	overflow: hidden; height: 400px;
+	overflow: hidden; height: 350px;
 	position: relative; z-index: 1;
 }
 #adcast .first { background-color: #bd75c0; }
 #adcast .second { background-color: #96a855; }
 
 
-.adcast-item { height: 400px; }
-.adcast-item .content { position: relative; height: 400px; }
+.adcast-item { height: 350px; }
+.adcast-item .content { position: relative; height: 350px; }
 .adcast-content {
 	width: 460px;
 	position: absolute;
@@ -178,7 +178,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 }
 .adcast-title { font-size: 60px; line-height: 1em; margin-bottom: 15px; }
 .adcast-text { font-size: 24px; }
-.adcast-img { margin-top: 70px; position: relative; }
+.adcast-img { margin-top: 30px; position: relative; }
 
 .second .adcast-img { margin-top: 85px; }
 
