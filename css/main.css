@@ -169,7 +169,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 #adcast .second { background-color: #96a855; }
 
 
-.adcast-item { height: 400px; background: url('../images/luz-destaque.png') no-repeat center -10px; }
+.adcast-item { height: 400px; }
 .adcast-item .content { position: relative; height: 400px; }
 .adcast-content {
 	width: 460px;
@@ -178,7 +178,8 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 }
 .adcast-title { font-size: 60px; line-height: 1em; margin-bottom: 15px; }
 .adcast-text { font-size: 24px; }
-.adcast-img { margin-top: 70px; }
+.adcast-img { margin-top: 70px; position: relative; }
+
 .second .adcast-img { margin-top: 85px; }
 
 .selo-valor { position: absolute; bottom: 20px; right: 20px; }

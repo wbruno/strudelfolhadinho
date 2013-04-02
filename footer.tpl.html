@@ -2,6 +2,13 @@
 $msg = '';
 if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 {
+
+
+	if( isset($_POST['sabor'] ) ) $sabor = implode(', ', $_POST['sabor']);
+
+
+	$uri = $_SERVER['REQUEST_URI'];
+
 	/* Mensagem */
 	$message =
 	'<strong>Nome: </strong>'.$_POST['nome'].'<br>'.
@@ -9,15 +16,14 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 	'<strong>E-mail: </strong>'.$_POST['email'].'<br>'.
 	'<strong>CEP: </strong>'.$_POST['cep'].'<br>'.
 	'<strong>Número: </strong>'.$_POST['numero'].'<br>'.
-	'<strong>Detalhes: </strong>'.$_POST['detalhes'].'<br>';
+	'<strong>Detalhes: </strong>'.$_POST['detalhes'].'<br>'.
+	'<strong>Sabor: </strong>'.$sabor.'<br><br>'.
+	'<strong>URI: </strong>'.$uri.'<br>';
 
-	if( isset( $_POST['sabor'] ) )
-		$message .= 'Fez um pedido dos strudels: '.implode( ', ', $_POST['sabor'] ).'<br /><br />';
 
 	$mysqli = new mysqli(SERVER, USER, PASS, DB);
 
 
-	if( isset($_POST['sabor'] ) ) $sabor = implode(', ', $_POST['sabor']);
 
 
 	$sql = "INSERT INTO pedido 
@@ -32,7 +38,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 			'".getPost('detalhes')."',
 			'".$sabor."',
 			NOW(),
-			'".$_SERVER['REQUEST_URI']."'
+			'".$uri."'
 		)";
 
 	$mysqli->query($sql);

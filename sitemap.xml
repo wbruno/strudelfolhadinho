@@ -108,7 +108,7 @@
     <image:title>Tira de strudel de maçã antes de ir ao forno</image:title>
     <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
   </image:image>
-
+<!--
   <video:video>
     <video:thumbnail_loc>http://strudelfolhadinho.com.br/images/thumbnail-video-massa-folhada.jpg</video:thumbnail_loc> 
     <video:title>Preparo da Massa Folhada do Strudel</video:title>
@@ -125,7 +125,7 @@
     <video:uploader info="https://www.facebook.com/StrudelFolhadinho">Strudel Folhadinho</video:uploader>
     <video:live>no</video:live>
   </video:video> 
-
+-->
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/como-comprar.html</loc>
