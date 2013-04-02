@@ -4,7 +4,7 @@ class Seo
 {
 	private static $title_default = 'Strudel Folhadinho - SP';
 	private static $key_default = 'strudel, apfelstrudel, strudel folhadinho, strudel em são paulo';
-	private static $desc_default = 'Faça Seu Pedido OnLine de Strudel em Diversos Sabores. Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227';
+	private static $desc_default = 'Peça online seu Strudel de Maçã, e outros sabores. Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227';
 	
 	private static $url = 'http://strudelfolhadinho.com.br';
 
@@ -23,7 +23,7 @@ class Seo
 			case 'class="como-e-feito"':
 				$arr['desc'] = 'Preparo dos strudels. '.self::$desc_default;
 				$arr['key'] = ''.self::$key_default;
-				$arr['title'] = 'Como é feito o Strudel de Maça ?';
+				$arr['title'] = 'Como é feito o Strudel de Maçã ?';
 				$arr['canonical'] = self::$url . '/como-e-feito.html';
 				break;
 				
