@@ -9,6 +9,7 @@ RewriteRule (.*) http://strudelfolhadinho.com.br/$1 [R=301,L]
 
 RewriteRule ^strudel/?$ http://strudelfolhadinho.com.br/strudel-de-maca.html [R,NC,L]
 RewriteRule ^carta-de-strudel.html$ http://strudelfolhadinho.com.br/cardapio.html [R=301,NC,L]
+RewriteRule ^como-comprar.html$ http://strudelfolhadinho.com.br/onde-comprar.html [R=301,NC,L]
 
 ErrorDocument 404 /404.html
 

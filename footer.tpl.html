@@ -45,7 +45,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 
 	$msg = 'Hummm! Já está sentindo o cheirinho por aí? Vamos conferir os detalhes do seu pedido e já, já entraremos em contato e enviaremos seu Strudel';
 
-	
+
 	echo '<script>alert( "'.$msg.'" )</script>';
 	echo '<img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/991967545/imp.gif?value=0&amp;label=yZzhCJ-x2wQQufKA2QM&amp;guid=ON&amp;script=0"/>';
 }
@@ -53,10 +53,10 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 <footer id="footer">
 	<section id="form-action" role="application">
 
-		<?php 
+		<?php
 			if( $msg ) {
 				echo '<p class="content column-full clear">'.$msg.'</p>';
-			} else { 
+			} else {
 		?>
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="form" class="content column-full">
 			<fieldset class="fleft column-third space-right">
