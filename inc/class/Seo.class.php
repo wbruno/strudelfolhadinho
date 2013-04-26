@@ -28,55 +28,55 @@ class Seo
 				break;
 
 			case 'class="onde-comprar"':
-				$arr['desc'] = 'Saiba onde comprar strudel de maçã em são paulo. '.self::$desc_default;
+				$arr['desc'] = 'Saiba onde comprar o verdadeiro strudel de maçã alemão em São Paulo. '.self::$desc_default;
 				$arr['title'] = 'Onde comprar Strudel de Maça em São Paulo ?';
 				$arr['canonical'] = self::$url . '/onde-comprar.html';
 				break;
 
 			case 'class="strudel-de-maca"':
-				$arr['desc'] = 'Compre agora o tradicional strudel de maçã. Peça OnLine seu Strudel de Maçã. '.self::$desc_default;
+				$arr['desc'] = 'Compre agora o tradicional strudel de maçã alemão. Peça online seu Strudel de Maçã. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Maçã em São Paulo';
 				$arr['canonical'] = self::$url . '/strudel-de-maca.html';
 				break;
 
 			case 'class="strudel-de-doce-de-leite"':
-				$arr['desc'] = 'Prove o delicioso strudel de doce de leite. '.self::$desc_default;
+				$arr['desc'] = 'Prove o delicioso strudel de doce de leite. Receita original alemã. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Doce de Leite | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/strudel-de-doce-de-leite.html';
 				break;
 
 			case 'class="strudel-de-banana"':
-				$arr['desc'] = 'O tropical strudel de banana. '.self::$desc_default;
+				$arr['desc'] = 'O tropical strudel de banana. Experimente o verdadeiro strudel alemão. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Banana | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/strudel-de-banana.html';
 				break;
 
 			case 'class="strudel-de-frango-com-catupiry"':
-				$arr['desc'] = 'Strudel de Frango com Catupiry '.self::$desc_default;
+				$arr['desc'] = 'Saiba onde comprar Strudel de Frango com Catupiry em São Paulo. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Frango com Catupiry | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/strudel-de-frango-com-catupiry.html';
 				break;
 
 			case 'class="strudel-de-palmito"':
-				$arr['desc'] = 'Strudel de Palmito '.self::$desc_default;
+				$arr['desc'] = 'Saiba onde comprar Strudel de Palmito em São Paulo. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Palmito | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/strudel-de-palmito.html';
 				break;
 
 			case 'class="strudel-de-bacalhau"':
-				$arr['desc'] = 'Strudel de Bacalhau '.self::$desc_default;
+				$arr['desc'] = 'Saiba onde comprar Strudel de Bacalhau em São Paulo. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Bacalhau | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/strudel-de-bacalhau.html';
 				break;
 
 			case 'class="apfelstrudel"':
-				$arr['desc'] = 'Apfelstrudel, o original strudel de maçã. Receita tradicional hungara do apfelstrudel, conhecida nos países da Europa Central.';
+				$arr['desc'] = 'Apfelstrudel, o original strudel de maçã alemão. Receita tradicional hungara do apfelstrudel, conhecida nos países da Europa Central.';
 				$arr['title'] = 'Apfelstrudel | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/apfelstrudel.html';
 				break;
 
 			case 'class="cardapio"':
-				$arr['desc'] = 'Cardápio dos Strudels. '.self::$desc_default;
+				$arr['desc'] = 'Cardápio dos Strudels. Veja os preços do strudel de maçã em São Paulo. '.self::$desc_default;
 				$arr['title'] = 'Preço do Strudel | '.self::$title_default;
 				$arr['canonical'] = self::$url . '/cardapio.html';
 				break;
