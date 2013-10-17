@@ -34,7 +34,7 @@ class Seo
 				break;
 
 			case 'class="strudel-de-maca"':
-				$arr['desc'] = 'Compre agora o tradicional strudel de maçã alemão. Peça online seu Strudel de Maçã. '.self::$desc_default;
+				$arr['desc'] = 'Veja como comprar strudel de maçã. Peça online seu Strudel de Maçã - Apfelstrudel. '.self::$desc_default;
 				$arr['title'] = 'Strudel de Maçã em São Paulo';
 				$arr['canonical'] = self::$url . '/strudel-de-maca.html';
 				break;

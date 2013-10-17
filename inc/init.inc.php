@@ -18,7 +18,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
  * edite ele para mudar conexão com o banco de dados
  */
 if( !file_exists(BASE_PATH.'config.inc.php') ){
-        exit('Erro config.php nao encontrado');
+//        exit('Erro config.php nao encontrado');
 } else {
         require BASE_PATH.'config.inc.php';
 }
