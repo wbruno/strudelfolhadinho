@@ -1,64 +1,7 @@
-<?php
-$msg = '';
-if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
-{
-
-
-	if( isset($_POST['sabor'] ) ) $sabor = implode(', ', $_POST['sabor']);
-
-
-	$uri = $_SERVER['REQUEST_URI'];
-
-	/* Mensagem */
-	$message =
-	'<strong>Nome: </strong>'.$_POST['nome'].'<br>'.
-	'<strong>Telefone: </strong>'.$_POST['telefone'].'<br>'.
-	'<strong>E-mail: </strong>'.$_POST['email'].'<br>'.
-	'<strong>CEP: </strong>'.$_POST['cep'].'<br>'.
-	'<strong>Número: </strong>'.$_POST['numero'].'<br>'.
-	'<strong>Detalhes: </strong>'.$_POST['detalhes'].'<br>'.
-	'<strong>Sabor: </strong>'.$sabor.'<br><br>'.
-	'<strong>URI: </strong>'.$uri.'<br>';
-
-
-	$mysqli = new mysqli(SERVER, USER, PASS, DB);
-
-
-
-
-	$sql = "INSERT INTO pedido 
-		(id, nome, telefone, email, cep, numero, detalhes, sabor, data, url) 
-		VALUES(
-			NULL,
-			'".getPost('nome')."',
-			'".getPost('telefone')."',
-			'".getPost('email')."',
-			'".getPost('cep')."',
-			'".getPost('numero')."',
-			'".getPost('detalhes')."',
-			'".$sabor."',
-			NOW(),
-			'".$uri."'
-		)";
-
-	$mysqli->query($sql);
-
-	$msg = 'Hummm! Já está sentindo o cheirinho por aí? Vamos conferir os detalhes do seu pedido e já, já entraremos em contato e enviaremos seu Strudel';
-
-
-	echo '<script>alert( "'.$msg.'" )</script>';
-	echo '<img height="1" width="1" alt="" src="http://www.googleadservices.com/pagead/conversion/991967545/imp.gif?value=0&amp;label=yZzhCJ-x2wQQufKA2QM&amp;guid=ON&amp;script=0"/>';
-}
-?>
 <footer id="footer">
 	<section id="form-action" role="application">
 
-		<?php
-			if( $msg ) {
-				echo '<p class="content column-full clear">'.$msg.'</p>';
-			} else {
-		?>
-		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="form" class="content column-full">
+		<form action="/" method="post" id="form" class="content column-full">
 			<fieldset class="fleft column-third space-right">
 				<label for="nome">
 					<span>Seu nome *</span>
@@ -126,7 +69,6 @@ if( $_SERVER['REQUEST_METHOD']=='POST' && $_POST['sobrenome']==='' )
 				<label><input type="submit" name="enviar" value="Eu quero!" class="input-submit" /></label>
 			</fieldset>
 		</form>
-		<?php } ?>
 
 	</section><!-- #form-action -->
 	<div id="copy" class="content column-full" role="contentinfo">

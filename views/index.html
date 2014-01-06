@@ -1,4 +1,4 @@
-<?php include 'header.tpl.html'; ?>
+{{> header }}
 <section id="adcast">
 	<ul class="content">
 		<li class="adcast-item first">
@@ -54,13 +54,7 @@
 				<small itemprop="addressRegion">SP</small>
 			</div>
 			Telefone: <span itemprop="telephone">
-<?php
-	if( $h>=7 && $h<13 ){
-		echo '<span title="ligue (11) 3782-2391">(11) 3782-2391</span>';
-	} else {
-		echo '<span title="ligue (11) 9 6309-9227">(11) 9 6309-9227</span>';
-	}
-?>
+		            <span title="ligue (11) 9 6309-9227">(11) 9 6309-9227</span>
 			</span> -
 			<span> strudelfolhadinho@gmail.com</span>
 		</section><!-- .column-full -->
@@ -70,4 +64,4 @@
 		<div class="clear"></div>
 	</div><!-- .content -->
 </article><!-- #content -->
-<?php include 'footer.tpl.html'; ?>
+{{> footer }}

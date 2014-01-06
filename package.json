@@ -1,0 +1,25 @@
+{
+  "name": "strudelfolhadinho.com.br",
+  "version": "0.0.1",
+  "description": "Site Strudel Folhadinho",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~3.4.7",
+    "hbs": "~2.4.0",
+    "nodemailer": "~0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wbruno/strudelfolhadinho.git"
+  },
+  "author": "William Bruno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wbruno/strudelfolhadinho/issues"
+  },
+  "homepage": "https://github.com/wbruno/strudelfolhadinho"
+}
