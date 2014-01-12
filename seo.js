@@ -6,7 +6,7 @@ var seodefault = {
 exports.seo = {
     index: {
         title: 'Strudel de Maçã | ' + seodefault.title,
-        description: 'Compre Strudel de Maçã em São Paulo. ' + seodefault.description,
+        description: 'Compre o original Strudel de Maçã em São Paulo. Entregamos o Apfelstrudel alemão na cidade de São Paulo.',
         canonical: seodefault.url
     },
     como: {
