@@ -1,9 +1,17 @@
 var express = require('express'),
     hbs = require('hbs'),
     router = require('./router').router,
-    app = express();
+    app = express(),
+    d = new Date();
 
 hbs.registerPartials(__dirname + '/views/partials');
+
+if (d.getHours() > 13) {
+    hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
+} else {
+    hbs.registerPartial('phoneNumber', '(11) 3782-2391');
+}
+
 
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
