@@ -72,10 +72,9 @@
 		$address.innerHTML = "Não foi possível obter sua posição.";
 	}
 	function success(position) {
-		var url = 'inc/geo.php?address=' + position.coords.latitude + ',' + position.coords.longitude + '&callback=?',
+		var url = 'geo/' + position.coords.latitude + ',' + position.coords.longitude + '&callback=?',
 			$cep = getId('cep'),
 			$address = getId('address');
-
 
 		$cep.value = 'Procurando..';
 
@@ -83,10 +82,10 @@
 			url: url,
 			type: 'jsonp'
 		}, function (data) {
-			data = eval('(' + data + ')');
+            var obj = JSON.parse(data);
 
-			$address.innerHTML = data[0];
-			$cep.value = data[1];
+			$address.innerHTML = obj.address;
+			$cep.value = obj.cep;
 		});
 	}
 	function switchTag(e, toTag) {
@@ -167,7 +166,7 @@
 		/* transformando span#phone em tag a */
 		$phone.setAttribute('href', getId('phone').getAttribute('data-href'));
 		$phone.removeAttribute('data-href');
-		switchTag($phone, 'a');
+		//switchTag($phone, 'a');
 
 		/* geolocalizacao do cep */
 		if (navigator.geolocation) {

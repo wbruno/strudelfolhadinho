@@ -40,10 +40,12 @@ app.get('/strudel-de-doce-de-leite.html', router.leite);
 app.get('/strudel-de-banana.html', router.banana);
 app.get('/strudel-de-frango-com-catupiry.html', router.frango);
 app.get('/apfelstrudel.html', router.apfelstrudel);
+
+app.get('/geo/:pos', router.geo);
 app.get('*', router.notFound);
 
-app.post('/', router.order);
 
+app.post('/', router.order);
 
 
 app.listen(3002);
