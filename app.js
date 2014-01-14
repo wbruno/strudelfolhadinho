@@ -39,6 +39,8 @@ app.get('/strudel-de-maca.html', router.maca);
 app.get('/strudel-de-doce-de-leite.html', router.leite);
 app.get('/strudel-de-banana.html', router.banana);
 app.get('/strudel-de-frango-com-catupiry.html', router.frango);
+app.get('/strudel-de-bacalhau.html', router.bacalhau);
+app.get('/strudel-de-chocolate.html', router.chocolate);
 app.get('/apfelstrudel.html', router.apfelstrudel);
 
 app.get('/geo/:pos', router.geo);

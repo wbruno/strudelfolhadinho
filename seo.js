@@ -49,6 +49,11 @@ exports.seo = {
           title: 'Strudel de Bacalhau | ' + seodefault.title,
           canonical: seodefault.url + '/strudel-de-bacalhau.html'
     },
+    chocolate: {
+          description: 'Compre Strudel de Chocolate nessa Páscoa. ' + seodefault.description,
+          title: 'Strudel de Chocolate | ' + seodefault.title,
+          canonical: seodefault.url + '/strudel-de-chocolate.html'
+    },
     apfelstrudel: {
           description: 'Apfelstrudel, o original strudel de maçã alemão. Receita tradicional hungara do apfelstrudel, conhecida nos países da Europa Central.',
           title: 'Apfelstrudel | ' + seodefault.title,

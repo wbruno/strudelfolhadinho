@@ -31,6 +31,12 @@ exports.router = {
     apfelstrudel: function(req, res) {
         res.render('apfelstrudel', seo.apfelstrudel);
     },
+    bacalhau: function(req, res) {
+        res.render('strudel-de-bacalhau', seo.bacalhau);
+    },
+    chocolate: function(req, res) {
+        res.render('strudel-de-chocolate', seo.chocolate);
+    },
     geo: function(req, res) {
         var pos = encodeURI(req.params.pos),
             options = {

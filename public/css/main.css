@@ -276,9 +276,9 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 /* flavor */
 .box-flavor {
 	background: #eee;
-	height: 165px;
 	border-radius: 7px;
 	margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .flavor-title {
 	margin: 15px 20px;
