@@ -59,7 +59,7 @@ exports.seo = {
           title: 'Apfelstrudel | ' + seodefault.title,
           canonical: seodefault.url + '/apfelstrudel.html'
     },
-    menu: {
+    cardapio: {
           description: 'Cardápio dos Strudels. Veja os preços do strudel de maçã em São Paulo. ' + seodefault.description,
           title: 'Preço do Strudel | ' + seodefault.title,
           canonical: seodefault.url + '/cardapio.html'
