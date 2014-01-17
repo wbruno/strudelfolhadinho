@@ -1,13 +1,16 @@
 var express = require('express'),
     hbs = require('hbs'),
     router = require('./router').router,
+    products = require('./products'),
     app = express();
+
 
 
 hbs.registerPartials(__dirname + '/views/partials');
 hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
 
 
+app.locals(products);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.engine('html', hbs.__express);
