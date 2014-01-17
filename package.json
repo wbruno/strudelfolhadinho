@@ -1,6 +1,6 @@
 {
   "name": "strudelfolhadinho.com.br",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Site Strudel Folhadinho",
   "main": "index.js",
   "dependencies": {
