@@ -28,6 +28,9 @@ exports.router = {
     frango: function(req, res) {
         res.render('strudel-de-frango-com-catupiry', seo.frango);
     },
+    palmito: function(req, res) {
+        res.render('strudel-de-palmito', seo.palmito);
+    },
     apfelstrudel: function(req, res) {
         res.render('apfelstrudel', seo.apfelstrudel);
     },
@@ -80,6 +83,9 @@ exports.router = {
         });
 
         request.end();
+    },
+    blog: function(req, res) {
+        res.redirect(301, '/index.html');
     },
     notFound: function(req, res) {
         res.render('404');

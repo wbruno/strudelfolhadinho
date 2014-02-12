@@ -6,7 +6,7 @@ var seodefault = {
 exports.seo = {
     index: {
         title: 'Strudel de Maçã | ' + seodefault.title,
-        description: 'Compre o original Strudel de Maçã em São Paulo. Entregamos o Apfelstrudel alemão na cidade de São Paulo.',
+        description: 'Strudel de Maçã é só pedir com a Strudel Folhadinho. Entregamos o original Apfelstrudel alemão, Strudel de Maçã na cidade de São Paulo.',
         canonical: seodefault.url
     },
     como: {
@@ -60,7 +60,7 @@ exports.seo = {
           canonical: seodefault.url + '/apfelstrudel.html'
     },
     cardapio: {
-          description: 'Cardápio dos Strudels. Veja os preços do strudel de maçã em São Paulo. ' + seodefault.description,
+          description: 'Compre strudel em são paulo, confira os preços dos doces húngaros ' + seodefault.description,
           title: 'Preço do Strudel | ' + seodefault.title,
           canonical: seodefault.url + '/cardapio.html'
     }
