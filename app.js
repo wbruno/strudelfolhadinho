@@ -41,6 +41,8 @@ app.get('/strudel-de-palmito.html', router.palmito);
 app.get('/strudel-de-bacalhau.html', router.bacalhau);
 app.get('/strudel-de-chocolate.html', router.chocolate);
 app.get('/apfelstrudel.html', router.apfelstrudel);
+app.get('/mini-strudel.html', router.mini);
+
 
 app.get('/geo/:pos', router.geo);
 app.get('/blog/?*', router.blog);

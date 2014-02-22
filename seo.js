@@ -1,5 +1,5 @@
 var seodefault = {
-    title: 'Strudel Folhadinho - SP',
+    title: 'Strudel Folhadinho - Fazemos o original ApfelStrudel',
     description: 'Entregas na Região Metropolitana de São Paulo. Ligue (11) 96309-9227',
     url: 'http://strudelfolhadinho.com.br'
 }
@@ -20,7 +20,7 @@ exports.seo = {
           canonical: seodefault.url + '/onde-comprar.html'
     },
     maca: {
-          description: 'Veja como comprar strudel de maçã. Peça online seu Strudel de Maçã - Apfelstrudel. ' + seodefault.description,
+          description: 'Veja como comprar strudel de maçã. Encomende online seu Strudel de Maçã - Apfelstrudel. ' + seodefault.description,
           title: 'Strudel de Maçã em São Paulo',
           canonical: seodefault.url + '/strudel-de-maca.html'
     },
@@ -54,8 +54,13 @@ exports.seo = {
           title: 'Strudel de Chocolate | ' + seodefault.title,
           canonical: seodefault.url + '/strudel-de-chocolate.html'
     },
+    mini: {
+          description: 'Encomende mini strudel para a sua festa, fazemos entregas e preços especiais para buffets. Consulte os valores no atacado para mini strudel',
+          title: 'Mini Strudel de Maçã | ' + seodefault.title,
+          canonical: seodefault.url + '/mini-strudel.html'
+    },
     apfelstrudel: {
-          description: 'Apfelstrudel, o original strudel de maçã alemão. Receita tradicional hungara do apfelstrudel, conhecida nos países da Europa Central.',
+          description: 'Apfelstrudel, o original strudel de maçã alemão. Receita tradicional húngara do apfelstrudel, conhecida nos países da Europa Central.',
           title: 'Apfelstrudel | ' + seodefault.title,
           canonical: seodefault.url + '/apfelstrudel.html'
     },

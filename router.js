@@ -40,6 +40,9 @@ exports.router = {
     chocolate: function(req, res) {
         res.render('strudel-de-chocolate', seo.chocolate);
     },
+    mini: function(req, res) {
+        res.render('mini-strudel', seo.mini);
+    },
     geo: function(req, res) {
         var pos = encodeURI(req.params.pos),
             options = {

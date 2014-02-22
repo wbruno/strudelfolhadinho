@@ -19,6 +19,11 @@ exports.products = {
             name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate meio amargo, açúcar.', 
             price: '55,00', url: '/strudel-de-chocolate.html',
             badge: 'selo-valor-strudel-55.png'
+        },
+        mini: { 
+            name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual', 
+            price: '3,00', url: '/mini-strudel.html',
+            badge: 'selo-valor-strudel-3.png'
         }
     },
     savory: {
