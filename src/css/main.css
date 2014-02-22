@@ -216,7 +216,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 #form-action {
 	background: url('../images/bg-header-roxo.jpg') repeat top center #8A2085;
 	border-bottom: 1px solid #3e0548;
-	height: 335px; padding-top: 30px;
+	height: 385px; padding-top: 30px;
 	color: #fff; margin-bottom: 40px;
 }
 #copy { color: #732a80; font-size: 16px; height: 40px; }
