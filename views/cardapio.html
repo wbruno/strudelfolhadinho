@@ -1,30 +1,30 @@
 {{> header }}
 
 <article id="main">
-	<aside id="how-buy" class="above" role="complementary">
-		<div class="content column-full">
-			<h1 class="fleft space-right">Cardápio dos Strudels</h1>
-			<p class="fleft space-right how-buy-text">Este é um cardápio de sabores doces e salgados</p>
-		
-			<div class="clear"></div>
-		</div>
-	</aside><!-- #how-buy -->
-	<div class="content column-three-quarters" role="main">
-		<h2>Strudels Doces</h2>
-		<ul class="chart">
+    <aside id="how-buy" class="above" role="complementary">
+        <div class="content column-full">
+            <h1 class="fleft space-right">Cardápio dos Strudels</h1>
+            <p class="fleft space-right how-buy-text">Este é um cardápio de sabores doces e salgados</p>
+        
+            <div class="clear"></div>
+        </div>
+    </aside><!-- #how-buy -->
+    <div class="content column-three-quarters" role="main">
+        <h2>Strudels Doces</h2>
+        <ul class="chart">
 {{#each products.sweet}}
-			<li>
-				<p class="title chart-title"><a href="{{url}}" class="chart-title-text bold">{{name}}</a> 
+            <li>
+                <p class="title chart-title"><a href="{{url}}" class="chart-title-text bold">{{name}}</a> 
                     <span class="fright">R$ {{price}}</span> </p>
-				<p>{{description}}</p>
-			</li>
+                <p>{{description}}</p>
+            </li>
 {{/each}}
-		</ul>
-		<h2>Strudels Salgados</h2>
-		<ul class="chart">
+        </ul>
+        <h2>Strudels Salgados</h2>
+        <ul class="chart">
 {{#each products.savory}}
-			<li>
-				<p class="title chart-title">
+            <li>
+                <p class="title chart-title">
     {{#if url}}
                     <a href="{{url}}" class="chart-title-text bold">{{name}}</a> 
     {{else}}
@@ -32,13 +32,13 @@
     {{/if}}
 
                     <span class="fright">R$ {{price}}</span> </p>
-				<p>{{description}}</p>
-			</li>
+                <p>{{description}}</p>
+            </li>
 {{/each}}
-		</ul><!-- #chart -->
+        </ul><!-- #chart -->
 
 
-		<div class="clear"></div>
-	</div>
+        <div class="clear"></div>
+    </div>
 </article><!-- #main -->
 {{> footer }}
