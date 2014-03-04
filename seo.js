@@ -5,8 +5,8 @@ var seodefault = {
 }
 exports.seo = {
     index: {
-        description: 'Strudel de Maçã é só pedir com a Strudel Folhadinho. Entregamos o original Apfelstrudel alemão, o melhor Strudel de Maçã da cidade de São Paulo.',
-        title: 'Strudel de Maçã, encomende o original ApfelStrudel - '  + seodefault.title,
+        description: 'Encomende o seu Strudel de Maçã. Entregamos o original Apfelstrudel alemão, o melhor Strudel de Maçã da cidade de São Paulo.',
+        title: 'Strudel de Maçã, encomende o original ApfelStrudel',
         canonical: seodefault.url
     },
     como: {
@@ -16,11 +16,11 @@ exports.seo = {
     },
     onde: {
           description: 'Saiba como comprar e o preço do original apfelstrudel de maçã alemão em São Paulo. Aceitamos encomendas. ' + seodefault.description,
-          title: 'Onde comprar Strudel de Maça em São Paulo ?' + seodefault.title,
+          title: 'Onde comprar Strudel de Maça em São Paulo ?',
           canonical: seodefault.url + '/onde-comprar.html'
     },
     maca: {
-          description: 'Veja como comprar strudel de maçã. Encomende online seu Apfelstrudel. ' + seodefault.description,
+          description: 'Delivery strudel de maçã, compre e encomende online seu Apfelstrudel. ' + seodefault.description,
           title: 'O original ApfelStrudel, Strudel de Maçã em São Paulo',
           canonical: seodefault.url + '/strudel-de-maca.html'
     },
