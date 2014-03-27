@@ -49,6 +49,9 @@ app.get('/strudel', function(req, res){
 app.get('/apfelstrdl', function(req, res){
     res.redirect(301, '/apfelstrudel.html');
 });
+app.get('/carta-de-strudel.html', function(req, res){
+    res.redirect(301, '/cardapio.html');
+});
 
 
 app.get('/geo/:pos', router.geo);
