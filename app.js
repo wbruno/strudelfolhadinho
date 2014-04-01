@@ -2,7 +2,8 @@ var express = require('express'),
     hbs = require('hbs'),
     router = require('./router').router,
     products = require('./products'),
-    app = express();
+    app = express(),
+    redirect404 = require('./redirect404').redirect;
 
 
 
@@ -53,6 +54,12 @@ app.get('/carta-de-strudel.html', function(req, res){
     res.redirect(301, '/cardapio.html');
 });
 
+
+redirect404.forEach(function(each){
+    app.get(each.from, function(req, res){
+        res.redirect(301, each.to);
+    });
+});
 
 app.get('/geo/:pos', router.geo);
 app.get('/blog/?*', router.blog);
