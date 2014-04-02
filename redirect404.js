@@ -18,5 +18,9 @@ exports.redirect = [
     {
         'from': '/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/',
         'to': 'http://wbruno.com.br/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/' 
+    },
+    {
+        'from': '/admin/pedidos.php',
+        'to': '/' 
     }
 ];
