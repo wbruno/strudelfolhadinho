@@ -121,24 +121,6 @@
     <image:title>Tira de strudel de maçã antes de ir ao forno</image:title>
     <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
   </image:image>
-<!--
-  <video:video>
-    <video:thumbnail_loc>http://strudelfolhadinho.com.br/images/thumbnail-video-massa-folhada.jpg</video:thumbnail_loc> 
-    <video:title>Preparo da Massa Folhada do Strudel</video:title>
-    <video:description>Preparo artesanal da massa folhada do original strudel de maçã. Receita tradicional da massa do strudel de  maçã. É assim que a Strudel Folhadinho faz a massa dos strudels que comercializamos.</video:description>
-    <video:content_loc>http://fast.wistia.net/embed/iframe/0727g9uun1</video:content_loc>
-    <video:player_loc allow_embed="yes" autoplay="ap=1">http://fast.wistia.net/embed/iframe/0727g9uun1?controlsVisibleOnLoad=true&amp;  version=v1&amp;videoHeight=360&amp;videoWidth=640&amp;volumeControl=true</video:player_loc>
-    <video:duration>1800</video:duration>
-    <video:expiration_date>2014-11-05T19:20:30+08:00</video:expiration_date>
-    <video:rating>4.2</video:rating> 
-    <video:view_count>31</video:view_count>    
-    <video:publication_date>2013-03-01T19:20:30+08:00</video:publication_date>
-    <video:family_friendly>yes</video:family_friendly>   
-  
-    <video:uploader info="https://www.facebook.com/StrudelFolhadinho">Strudel Folhadinho</video:uploader>
-    <video:live>no</video:live>
-  </video:video> 
--->
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/onde-comprar.html</loc>
