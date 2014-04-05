@@ -300,6 +300,8 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
     .product-title { height: 90px; line-height: 1em; }
     .header-strip-delivery { display: none; }
     #phone { float: left;}
+
+    .wistia_embed { height: 200px !important; width: auto !important; }
 }
 @media only screen and (max-width: 650px){
     #nav-menu  { float: none; margin-top: 0; }
@@ -334,10 +336,6 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
     .logo-img { max-width: 80% !important; margin: 0 auto; display: block; }
 
     .copy-text { font-size: 11px; }
-
-    #wistia_0727g9uun1_grid_wrapper { height: 200px !important;}
-    #wistia_0727g9uun1,
-    #wistia_0727g9uun1_grid_main { width: 300px !important; }
 }
 @media only screen and (max-width: 320px){
     .input-small { width: 83%; }
@@ -352,5 +350,4 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
         content: " - ( " attr(href) " )";
         font-size: 0.7em;
     }
-
 }
