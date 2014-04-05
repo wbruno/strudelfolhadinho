@@ -17,11 +17,11 @@ module.exports = function (grunt) {
             with_banner: {
                 options: {
                     banner: '/* \n' +
-                        '<%= pkg.name %> \n' +
+                        'Minified CSS of <%= pkg.name %> \n' +
                         '*/'
                 },
                 files: {
-                    'public/css/main.css': ['src/css/main.css']
+                    'public/css/main.css': ['src/css/column-gs.css', 'src/css/main.css']
                 }
             }
         },
