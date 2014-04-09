@@ -44,15 +44,7 @@ app.get('/strudel-de-chocolate.html', router.chocolate);
 app.get('/apfelstrudel.html', router.apfelstrudel);
 app.get('/mini-strudel.html', router.mini);
 
-app.get('/strudel', function(req, res){
-    res.redirect(301, '/strudel-de-maca.html');
-});
-app.get('/apfelstrdl', function(req, res){
-    res.redirect(301, '/apfelstrudel.html');
-});
-app.get('/carta-de-strudel.html', function(req, res){
-    res.redirect(301, '/cardapio.html');
-});
+
 
 
 redirect404.forEach(function(each){

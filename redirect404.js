@@ -17,7 +17,27 @@ exports.redirect = [
     },
     {
         'from': '/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/',
-        'to': 'http://wbruno.com.br/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/' 
+        'to': 'http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/' 
+    },
+    {
+        'from': '/css/tabela-zebrada-css-3/',
+        'to': 'http://wbruno.com.br/css/tabela-zebrada-css-3/' 
+    },
+    {
+        'from': '/como-comprar.html',
+        'to': '/onde-comprar.html' 
+    },
+    {
+        'from': '/carta-de-strudel.html',
+        'to': '/cardapio.html' 
+    },
+    {
+        'from': '/strudel',
+        'to': '/strudel-de-maca.html' 
+    },
+    {
+        'from': '/apfelstrdl',
+        'to': '/apfelstrudel.html' 
     },
     {
         'from': '/admin/pedidos.php',
