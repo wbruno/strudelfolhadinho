@@ -134,7 +134,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 #logo:hover img { opacity: 0.9; }
 .logo-text { display: block; }
 #adcast {
-    background: #4e0d59;
+    background: #bd75c0;
     color: #fff;
     overflow: hidden;
     position: relative; z-index: 1;
@@ -148,7 +148,6 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 
 .adcast-item .content { position: relative; }
 .adcast-content {
-    width: 460px;
     position: absolute;
     top: 100px; left: 30px;
 }
