@@ -29,8 +29,8 @@ server {
         proxy_pass http://localhost:3002;
     }
 
-    location = /robots.txt { access_log off; log_not_found off; }
-    location = /favicon.ico { access_log off; log_not_found off; }
+#    location = /robots.txt { access_log off; log_not_found off; }
+#    location = /favicon.ico { access_log off; log_not_found off; }
 
     location ~ /\.ht {
             deny all;
