@@ -44,7 +44,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
     height: 45px; line-height: 45px; 
     padding: 0 10px; border-radius: 5px;
 }
-.input-small { width: 67%; }
+.input-small { width: 69%; }
 .textarea { height: 137px; }
 
 .input-submit {
@@ -209,6 +209,7 @@ label span { display: block; margin-bottom: 8px; text-align: left; }
 .hreview .description { font-style: italic; }
 .itemreviewed { margin: 25px 0 0 0;}
 
+p.itemreviewed { width: 180px; font-size: 0.7em; }
 /* como comprar */
 #how-buy {
     background: #4e0d59;
