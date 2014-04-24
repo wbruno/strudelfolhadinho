@@ -91,6 +91,7 @@ exports.router = {
         res.redirect(301, '/index.html');
     },
     notFound: function(req, res) {
+        res.status(404);
         res.render('404');
     },
     order: function(req, res) {
