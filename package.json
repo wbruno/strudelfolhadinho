@@ -4,14 +4,14 @@
   "description": "Strudel Folhadinho",
   "homepage": "http://strudelfolhadinho.com.br",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e js,hbs,html"
   },
   "main": "app.js",
   "dependencies": {
     "express": "~3.4.8",
     "hbs": "~2.4.0",
-    "nodemailer": "~0.6.0",
-    "grunt-contrib-cssmin": "~0.7.0"
+    "nodemailer": "~0.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
