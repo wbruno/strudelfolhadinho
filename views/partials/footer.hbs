@@ -43,12 +43,12 @@
                 <label class="form-legend">Quais sabores você quer?</label>
 {{#each products.sweet}}
                 <label class="label-sabor">
-                    <input type="checkbox" name="sabor[]" value="{{name}}" /> {{name}} - R${{price}}
+                    <input type="checkbox" name="sabor[]" value="{{name}}" /> <a href="{{url}}">{{name}}</a> - R${{price}}
                 </label>
 {{/each}}
 {{#each products.savory}}
                 <label class="label-sabor">
-                    <input type="checkbox" name="sabor[]" value="{{name}}" /> {{name}} - R${{price}}
+                    <input type="checkbox" name="sabor[]" value="{{name}}" /> <a href="{{url}}">{{name}}</a> - R${{price}}
                 </label>
 {{/each}}
                 <label><input type="submit" name="enviar" value="Eu quero!" class="input-submit" /></label>
