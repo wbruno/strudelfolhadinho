@@ -10,11 +10,6 @@ exports.products = {
             price: '55,00', url: '/strudel-de-doce-de-leite.html',
             badge: 'selo-valor-strudel-55.png'
         },
-        banana: { 
-            name: 'Strudel de Banana', description: 'Massa Folhada, banana, canela da china, cravo e açúcar.', 
-            price: '50,00', url: '/strudel-de-banana.html',
-            badge: 'selo-valor-strudel-50.png'
-        },
         chocolate: { 
             name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate meio amargo, açúcar.', 
             price: '55,00', url: '/strudel-de-chocolate.html',

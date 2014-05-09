@@ -23,7 +23,7 @@ exports.router = {
         res.render('strudel-de-doce-de-leite', seo.leite);
     },
     banana: function(req, res) {
-        res.render('strudel-de-banana', seo.banana);
+        res.redirect(301, '/index.html');
     },
     frango: function(req, res) {
         res.render('strudel-de-frango-com-catupiry', seo.frango);
