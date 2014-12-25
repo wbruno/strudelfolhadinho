@@ -162,11 +162,10 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
     #form-action { margin-bottom: 10px; padding-top: 20px;}
 }
 @media only screen and (max-width: 880px){
-
     #adcast { height: auto; }
     .adcast-item { height: auto; padding-top: 20px; }
     .adcast-title { font-size: 38px; }
-    .adcast-content { position: static; width: 50%; float: left; }
+    .adcast-content { position: static; width: 50%; float: left; padding-top: 20px;  }
 
     .how-buy-text { margin-top: 0; }
 }
@@ -210,6 +209,7 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
 
     #logo img { width: 90%; }
     .midias a { margin-left: 0; }
+    #adcast .badge { bottom: 0px; transform: scale(0.5); }
 }
 @media only screen and (max-width: 470px){
     #phone { font-size: 0.8em; margin: 0; clear: none; float: left; }
@@ -217,6 +217,7 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
     #logo { float: none; margin: 0 auto; text-align: center; display: block; }
     #logo img { width: auto; }
     .copy-text { font-size: 11px; }
+    .midias { transform: scale(0.8); }
 }
 @media only screen and (max-width: 320px){
     .input-small { width: 83%; }
