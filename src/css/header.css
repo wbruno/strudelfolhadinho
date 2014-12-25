@@ -1,0 +1,59 @@
+#header {
+    height: 150px;
+    position: relative; z-index: 2;
+}
+#header h1 { margin: 0; }
+#header-strip {
+    color: #732a80;
+    height: 50px; line-height: 50px;
+    padding-top: 5px;
+}
+#header-strip a { color: #732a80; }
+.header-strip-delivery { margin: 0 30px 0 0; line-height: 50px; }
+
+.midias { padding-top: 6px; }
+.midias a {
+    width: 42px; height: 42px;
+    background: url('../images/sprites/icons.png') no-repeat;
+    margin-left: 10px;
+}
+.midias a:hover { opacity: 0.8 }
+
+.midias .youtube { background-position: -62px top; }
+.midias .gplus { background-position: -114px top; }
+.midias .like { background-position: -166px top; }
+.midias .tweet { background-position: -217px top; }
+
+#nav { position: relative; margin-top: 25px; }
+.nav-link {
+    font-size: 26px; font-weight: bold;
+    letter-spacing: -1px;
+    border-radius: 7px;
+}
+.nav-link a {
+    color: #732a80;
+    border-right: 1px solid #000;
+    padding: 0 20px;
+    height: 45px; line-height: 45px;
+}
+
+.nav-link:hover,
+.nav-link:active { background: #a6ce39; }
+
+#phone {
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: -1px
+}
+.ico-phone {
+    background: url('../images/sprites/icons.png') no-repeat;
+    background-position: -21px -9px;
+    width: 30px; height: 30px;
+    margin-top: 13px;
+    float: left;
+}
+#logo { margin-top: 25px; }
+#logo:hover img { opacity: 0.9; }
+.logo-text { display: block; }

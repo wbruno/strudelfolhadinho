@@ -1,42 +1,29 @@
 {{> contact_form }}
 
 <footer id="footer">
-    <section itemscope itemtype="http://schema.org/LocalBusiness" class="column-full clear">
-        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <small itemprop="streetAddress">Rua Padre Jácome de Queiroz</small>
-            <small itemprop="addressLocality">São Paulo</small>,
-            <small itemprop="addressRegion">SP</small>
-        </div>
-        Telefone: <span itemprop="telephone">
-                <span title="ligue {{> phoneNumber}}">{{> phoneNumber}}</span>
-        </span> -
-        <span> strudelfolhadinho@gmail.com</span>
-    </section><!-- .column-full -->
+    <div class="column-full content cf">
+        {{> midias }}
 
-    <div id="copy" class="content column-full" role="contentinfo">
-        <p class="column-full copy-text fleft"><span class="copy-simbol">&copy;</span>Strudel Folhadinho, todos os direitos reservados.</p>
-    </div><!-- #copy -->
-    <p class="content column-full is-hidden" id="no-responsive">desligar responsivo</p>
-</footer>
-<div tabindex="-1">
-<!-- Google Code for Tag de remarketing -->
-<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 991967545;
-var google_conversion_label = "0S1uCP_T9wQQufKA2QM";
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
-<noscript>
-    <div id="gif-conversion">
-    <img height="1" width="1" alt="Gif Remarketing Google Adwords" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991967545/?value=0&amp;label=0S1uCP_T9wQQufKA2QM&amp;guid=ON&amp;script=0"/>
+        <section itemscope itemtype="http://schema.org/LocalBusiness" class="fleft">
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <small itemprop="streetAddress">Rua Padre Jácome de Queiroz</small>
+                <small itemprop="addressLocality">São Paulo</small>,
+                <small itemprop="addressRegion">SP</small>
+            </div>
+            Telefone: <span itemprop="telephone">
+                    <span title="ligue {{> phoneNumber}}">{{> phoneNumber}}</span>
+            </span> -
+            <span> strudelfolhadinho@gmail.com</span>
+        </section><!-- .column-full -->
+
+        <p id="copy" role="contentinfo" class="fleft copy-text cleft">
+            <span class="copy-simbol">&copy;</span>Strudel Folhadinho, todos os direitos reservados.
+        </p><!-- #copy -->
+
+        <p class="content column-full is-hidden" id="no-responsive">desligar responsivo</p>
     </div>
-</noscript>
-</div>
+</footer><!-- #footer -->
 
-
+{{> conversion }}
 </body>
 </html>

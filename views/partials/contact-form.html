@@ -1,6 +1,8 @@
 <section id="form-action" role="application" class="cf">
-    <h2 itemprop="name" class="cursive purple">Strudel Folhadinho</h2>
-    <p itemprop="description">Preencha o formulário abaixo para fazer o seu pedido. Entregamos o original strudel de maçã(apfelstrudel) e outros sabores para toda a cidade de São Paulo.</p>
+    <div class="form-action-header content column-full">
+        <h2 itemprop="name" class="cursive purple">Strudel Folhadinho</h2>
+        <p itemprop="description">Preencha o formulário abaixo para fazer o seu pedido. Entregamos o original strudel de maçã(apfelstrudel) e outros sabores para toda a cidade de São Paulo.</p>
+    </div>
 
     <form action="/" method="post" id="form" class="content column-full">
         <fieldset class="fleft column-third">
@@ -43,16 +45,16 @@
         <fieldset class="fright column-third">
             <label class="form-legend">Quais sabores você quer?</label>
 {{#each products.sweet}}
-            <label class="label-sabor">
-                <input type="checkbox" name="sabor[]" value="{{name}}" /> <a href="{{url}}">{{name}}</a> - R${{price}}
+            <label class="label-flavor">
+                <input type="checkbox" name="sabor[]" value="{{name}}" /> {{name}} = <a href="{{url}}">R${{price}}</a>
             </label>
 {{/each}}
 {{#each products.savory}}
-            <label class="label-sabor">
-                <input type="checkbox" name="sabor[]" value="{{name}}" /> <a href="{{url}}">{{name}}</a> - R${{price}}
+            <label class="label-flavor">
+                <input type="checkbox" name="sabor[]" value="{{name}}" /> {{name}} = <a href="{{url}}">R${{price}}</a>
             </label>
 {{/each}}
-            <label><input type="submit" name="enviar" value="Eu quero!" class="input-submit" /></label>
+            <label><input type="submit" name="enviar" value="Pedir agora!" class="input-submit" /></label>
         </fieldset>
     </form>
 
