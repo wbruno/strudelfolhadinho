@@ -18,16 +18,16 @@ exports.send = function(req, res) {
     var dados = req.body;
 
     if (dados.sobrenome === '') {
-        
+
         mailOptions.text = dados.nome + ", cep: " + dados.cep + ", telefone: " + dados.telefone;
-        mailOptions.html = "Olá, <br /><br />" + 
-            "<b>" + dados.nome + "</b> fez um pedido:<br /><br />" + 
+        mailOptions.html = "Olá, <br /><br />" +
+            "<b>" + dados.nome + "</b> fez um pedido:<br /><br />" +
             "<b>Telefone:</b> " + dados.telefone + "<br />" +
             "<b>CEP:</b> " + dados.cep + ", " +
             "" + dados.numero + "<br />" +
             "<b>Email:</b> " + dados.email + "<br />" +
-            "<b>Detalhes:</b> " + dados.detalhes + "<br />" + 
-            "<b>Sabores: </b>" + dados.sabor.join(", ") + "<br /><br />" + 
+            "<b>Detalhes:</b> " + dados.detalhes + "<br />" +
+            "<b>Sabores: </b>" + dados.sabor.join(", ") + "<br /><br />" +
             "Att, <br />@Folhadinho";
 
         smtpTransport.sendMail(mailOptions, function(error, response){
