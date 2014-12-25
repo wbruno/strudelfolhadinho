@@ -16,8 +16,8 @@ module.exports = function (grunt) {
         cssmin: {
             with_banner: {
                 options: {
-                    banner: '/* \n' +
-                        'Minified CSS of <%= pkg.name %> \n' +
+                    banner: '/*\n' +
+                        'Minified CSS of <%= pkg.name %>\n' +
                         '*/'
                 },
                 files: {
