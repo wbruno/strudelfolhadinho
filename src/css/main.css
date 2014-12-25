@@ -52,7 +52,7 @@ p { margin-bottom: 25px; line-height: 1.4em; }
 .product-item { text-align: center; }
 
 .product-title { color: #732a80; font-size: 40px; }
-.product-img { display: block; margin: 0 auto 20px; position: relative; }
+.product-img { display: block; margin: 0 auto 20px; position: relative; min-height: 250px; }
 .product-action {
     background: #732a80; border-radius: 5px;
     padding: 0 15px; height: 40px; line-height: 40px;
@@ -99,7 +99,6 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
 #gif-conversion img { border: none; }
 
 .description {
-    background: url('../images/quote-left.jpg') no-repeat;
     padding: 4px 0 0 33px;
 }
 

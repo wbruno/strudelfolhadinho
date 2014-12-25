@@ -1,6 +1,18 @@
 .badge {
   background: url('../images/sprites/ico-badge.png');
-  width: 228px;
-  height: 227px;
+  width: 168px;
+  height: 177px;
   display: block;
+  padding: 50px 30px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  color: #fff;
+  text-align: center;
 }
+
+.badge-price,
+.badge-text { display: block; }
+
+.badge-price { font-size: 46px; margin-bottom: 10px; }
+
+.product-img .badge { position: absolute; bottom: 0; right: 0; }

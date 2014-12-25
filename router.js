@@ -23,7 +23,7 @@ exports.router = {
         res.render('strudel-de-doce-de-leite', seo.leite);
     },
     banana: function(req, res) {
-        res.redirect(301, '/index.html');
+        res.render('strudel-de-banana', seo.banana);
     },
     frango: function(req, res) {
         res.render('strudel-de-frango-com-catupiry', seo.frango);
@@ -51,7 +51,7 @@ exports.router = {
                 path: "/maps/api/geocode/json?address=" + pos + "&sensor=true"
             };
 
-    
+
         var request = http.request(options, function (response) {
             var data = "";
 
@@ -65,9 +65,9 @@ exports.router = {
                 try {
                     var json = JSON.parse(data),
                         obj = json.results[0],
-                        ret = { 
-                            address: obj.formatted_address.replace(/([^,]+)(.*)/, '$1'), 
-                            cep: obj.address_components[obj.address_components.length - 1].long_name 
+                        ret = {
+                            address: obj.formatted_address.replace(/([^,]+)(.*)/, '$1'),
+                            cep: obj.address_components[obj.address_components.length - 1].long_name
                         };
 
                     res.write(JSON.stringify(ret));

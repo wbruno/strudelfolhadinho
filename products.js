@@ -30,7 +30,7 @@ exports.products = {
     savory: {
         palmito: {
             name: 'Strudel de Palmito', description: 'Massa Folhada, palmito, molho bechamel.',
-            price: '75,00', url: '',
+            price: '75,00', url: '/strudel-de-palmito.html',
             badge: 'selo-valor-strudel-75.png'
         },
         frango: {
