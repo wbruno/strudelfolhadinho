@@ -1,68 +1,45 @@
 {{> header }}
-<section id="adcast">
-    <ul class="content">
-        <li class="adcast-item first">
-            <div class="content column-full">
-                <div class="adcast-content column-half">
-                    <h1 class="adcast-title">Strudel de Maçã</h1>
-                    <p class="adcast-text">O <strong lang="de">Apfelstrudel</strong>, ou <strong>Strudel de Maçã</strong>, como é conhecido aqui no Brasil e na Alemanha, é uma sobremesa tradicional de massa folhada e recheio doce.</p>
-                </div><!-- .adcast-content -->
-                <img src="images/strudel-de-maca-3.png" alt="Strudel Maçã Verde" title="Strudel de Maçã Verde" class="fright adcast-img" width="450" height="259" />
-                <img src="images/{{products.sweet.maca.badge}}" height="122" width="121" alt="Selo valor Strudel" title="R$ {{products.sweet.maca.price}} - equivalente a 10 fatias" class="selo-valor" />
-                <div class="clear"></div>
-            </div>
-        </li>
-    </ul>
-</section><!-- #adcast -->
+{{> adcast }}
 <article id="main">
     <div id="content" class="content column-full cf" role="main">
-        <p class="column-full"><span lang="de">Apfelstrudel</span> significa <em>folhado de maçã</em>. Foi na região onde hoje é a Áustria que ganhou popularidade durante o século 18 nos impérios e castelos locais. </p>
+        <div class="column-half">
+            <h2>Apfelstrudel</h2>
+            <p><span lang="de">Apfelstrudel</span> significa <em>folhado de maçã</em>. Foi na região onde hoje é a Áustria que ganhou popularidade durante o século 18 nos impérios e castelos locais. </p>
 
-        <p class="column-full">Sua tradicional massa é feita de farinha, água, vinagre e manteiga. O preparo é feito sobre uma mesa onde a massa é esticada por toda superfície até ficar transparente e com espessura de menos de 1 milímetro, para depois ser recheada com ingredientes especiais.</p>
+            <p>Sua tradicional massa é feita de farinha, água, vinagre e manteiga. O preparo é feito sobre uma mesa onde a massa é esticada por toda superfície até ficar transparente e com espessura de menos de 1 milímetro, para depois ser recheada com ingredientes especiais.</p>
 
-        <p class="column-full">Veja o <a href="/cardapio.html" class="purple">preço dos nossos strudels no cardápio</a></p>
+            <p>Veja o <a href="/cardapio.html" class="purple">preço dos nossos strudels no cardápio</a></p>
+        </div>
 
-        <h2 class="column-full">Veja o depoimento de clientes que experimentaram nossos strudels</h2>
-        <section class="hreview column-third clear">
-            <p class="description">Que delícia, hein!! Virei mega fã.. Parabéns.</p>
-            <span class="item is-hidden">Produto: <span class="fn">Strudel de Maçã</span></span>
-            <p class="summary bold">Cliente que comeu 1 strudel de maçã.</p>
-            <p><span class="reviewer">Dani</span> de <strong>São Paulo</strong>/SP em <span class="dtreviewed">01/04/2014 <span title="2013-03-29" class="value-title"></span></span> - Nota:<span class="rating">5.0</span></p>
-        </section>
-        <section class="hreview column-third">
-            <p class="description">Aprovado!</p>
-            <span class="item is-hidden">Produto: <span class="fn">Strudel de Maçã</span></span>
-            <p class="summary bold">Cliente que comprou um strudel de Maçã.</p>
-            <p><span class="reviewer">Kênia</span> de <strong>São Paulo</strong>/SP em <span class="dtreviewed">29/11/2012 <span title="2012-11-20" class="value-title"></span></span> - Nota:<span class="rating">5.0</span></p>
-        </section>
+        <div class="column-half">
+            <h2>Depoimentos de Clientes</h2>
+            <section class="hreview">
+                <p class="description">Que delícia, hein!! Virei mega fã.. Parabéns.</p>
+                <span class="item is-hidden">Produto: <span class="fn">Strudel de Maçã</span></span>
+                <p class="summary bold">Cliente que comeu 1 strudel de maçã.</p>
+                <p><span class="reviewer">Dani</span> de <strong>São Paulo</strong>/SP em <span class="dtreviewed">01/04/2014 <span title="2013-03-29" class="value-title"></span></span> - Nota:<span class="rating">5.0</span></p>
+            </section>
+            <section class="hreview">
+                <p class="description">Aprovado!</p>
+                <span class="item is-hidden">Produto: <span class="fn">Strudel de Maçã</span></span>
+                <p class="summary bold">Cliente que comprou um strudel de Maçã.</p>
+                <p><span class="reviewer">Kênia</span> de <strong>São Paulo</strong>/SP em <span class="dtreviewed">29/11/2012 <span title="2012-11-20" class="value-title"></span></span> - Nota:<span class="rating">5.0</span></p>
+            </section>
 
-        <div class="column-third" itemscope itemtype="http://data-vocabulary.org/Review-aggregate">
-            <img itemprop="image" src="http://strudelfolhadinho.com.br/images/strudel-de-maca-thumb.jpg" alt="Strudel de Maçã" width="145" height="145" class="fleft space-right" />
-            <p class="fleft itemreviewed">
-                <span itemprop="itemreviewed">Strudel de Maçã</span><br />
-                <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
-                    <span itemprop="average">10.0</span> out of <span itemprop="best">10</span>
-                </span>
-                based on <span itemprop="votes">7</span> ratings. <br />
-                <span itemprop="count">7</span> user reviews.
-            </p>
+            <div itemscope itemtype="http://data-vocabulary.org/Review-aggregate">
+                <img itemprop="image" src="http://strudelfolhadinho.com.br/images/strudel-de-maca-thumb.jpg" alt="Strudel de Maçã" width="145" height="145" class="fleft space-right" />
+                <p class="fleft itemreviewed">
+                    <span itemprop="itemreviewed">Strudel de Maçã</span><br />
+                    <span itemprop="rating" itemscope itemtype="http://data-vocabulary.org/Rating">
+                        <span itemprop="average">10.0</span> out of <span itemprop="best">10</span>
+                    </span>
+                    based on <span itemprop="votes">7</span> ratings. <br />
+                    <span itemprop="count">7</span> user reviews.
+                </p>
+            </div>
         </div>
 
         <p class="column-full clear"><small>* valores para a tira do strudel, que mede cerca de 35 centímetros.</small></p>
-
-        <section itemscope itemtype="http://schema.org/LocalBusiness" class="column-full clear">
-            <h2 itemprop="name" class="cursive purple">Strudel Folhadinho</h2>
-            <p itemprop="description">Preencha o formulário abaixo para fazer o seu pedido. Entregamos o original strudel de maçã(apfelstrudel) e outros sabores para toda a cidade de São Paulo.</p>
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <small itemprop="streetAddress">Rua Padre Jácome de Queiroz</small>
-                <small itemprop="addressLocality">São Paulo</small>,
-                <small itemprop="addressRegion">SP</small>
-            </div>
-            Telefone: <span itemprop="telephone">
-                    <span title="ligue {{> phoneNumber}}">{{> phoneNumber}}</span>
-            </span> -
-            <span> strudelfolhadinho@gmail.com</span>
-        </section><!-- .column-full -->
 
     </div><!-- .content -->
 </article><!-- #content -->

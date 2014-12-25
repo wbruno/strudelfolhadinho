@@ -21,7 +21,15 @@ module.exports = function (grunt) {
                         '*/'
                 },
                 files: {
-                    'public/css/main.css': ['src/css/column-gs.css', 'src/css/main.css']
+                    'public/css/main.css': [
+                        'src/css/column-gs.css',
+                        'src/css/adcast.css',
+                        'src/css/badge.css',
+                        'src/css/contact-form.css',
+                        'src/css/header.css',
+                        'src/css/footer.css',
+                        'src/css/main.css'
+                    ]
                 }
             }
         },
@@ -32,11 +40,11 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true,
                 }
-            } 
+            }
         }
 
     });
- 
+
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');

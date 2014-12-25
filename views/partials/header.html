@@ -7,7 +7,7 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="//polyfill.io/"></script>
+    <script type="text/javascript" src="//cdn.polyfill.io/v1/polyfill.min.js"></script>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -57,7 +57,7 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
+
         ga('create', 'UA-36266607-1', 'strudelfolhadinho.com.br');
         ga('require', 'linkid', 'linkid.js');
         ga('require', 'displayfeatures');
@@ -66,32 +66,25 @@
 </head>
 <body>
 <header id="header" role="banner">
-    <section id="header-strip">
-        <div class="content column-full">
-
-            <div class="midias fright">
-{{> midias }}
-            </div>
-
-            <span id="phone" class="fright" title="ligue {{> phoneNumber}}">{{> phoneNumber}}</span>
-            <p class="header-strip-delivery fright">Entregamos na cidade de São Paulo</p>
-
-        </div><!-- .column-full -->
-    </section><!-- #header-strip -->
-    <nav id="nav" class="content column-full" role="navigation">
+    <div class="content column-full">
         <a href="/index.html" id="logo" class="fleft" title="ir para a Home Strudel Folhadinho">
-            <img src="/images/logo-strudel-folhadinho.png" alt="Logo Strudel Folhadinho" title="Strudel Folhadinho" class="logo-img" width="292" height="116" />
+            <img src="/images/logo-strudel-folhadinho.png" alt="Logo Strudel Folhadinho" title="Strudel Folhadinho" class="logo-img" width="271" height="108" />
         </a>
+        <section id="header-strip" class="fright">
+{{> midias }}
 
-        <ul id="nav-menu" class="fright">
-            <li class="fleft nav-link first">
-                <a href="/cardapio.html" title="Veja nosso cardápio">Cardápio</a></li>
-            <li class="fleft nav-link second">
-                <a href="/como-e-feito.html" title="Como os strudels são feitos?">Como é Feito?</a></li>
-            <li class="fleft nav-link third">
-                <a href="/onde-comprar.html" title="Como compro com a Strudel Folhadinho?">Onde Comprar?</a></li>
-        </ul><!-- #nav-menu -->
-
-        <div class="clear"></div>
-    </nav><!-- #nav -->
+            <span id="phone" class="fright" title="ligue {{> phoneNumber}}"><i class="ico-phone"></i>{{> phoneNumber}}</span>
+            <p class="header-strip-delivery fright">Entregamos na cidade de São Paulo</p>
+        </section><!-- #header-strip -->
+        <nav id="nav" role="navigation" class="fright">
+            <ul id="nav-menu">
+                <li class="fleft nav-link first">
+                    <a href="/cardapio.html" title="Veja nosso cardápio">Cardápio</a></li>
+                <li class="fleft nav-link second">
+                    <a href="/como-e-feito.html" title="Como os strudels são feitos?">Como é Feito?</a></li>
+                <li class="fleft nav-link third">
+                    <a href="/onde-comprar.html" title="Como compro com a Strudel Folhadinho?">Onde Comprar?</a></li>
+            </ul><!-- #nav-menu -->
+        </nav><!-- #nav -->
+    </div>
 </header><!-- #header -->

@@ -99,10 +99,12 @@
         var $telefone = getId('telefone'),
             $cep = getId('cep'),
             $email = getId('email'),
-            $tweet = getId('tweet'),
-            $like = getId('like'),
-            $youtube = getId('youtube'),
-            $gplus = getId('gplus'),
+
+            $tweet = d.querySelector('.tweet'),
+            $like = d.querySelector('.like'),
+            $youtube = d.querySelector('.youtube'),
+            $gplus = d.querySelector('.gplus'),
+
             $address = getId('address'),
             $geo = getId('js-geo'),
             $phone = getId('phone'),
