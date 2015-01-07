@@ -1,49 +1,64 @@
-var seo = require('./seo').seo,
-    mail = require('./mail'),
-    http = require('http');
+module.exports = function(express) {
+    var router      = express.Router();
+        seo         = require('./seo').seo,
+        mail        = require('./mail'),
+        http        = require('http'),
+        redirect404 = require('./redirect404').redirect;
 
-
-exports.router = {
-    index: function(req, res) {
+    /**
+     * Pages
+     */
+    router.get('/', function(req, res) {
         res.render('index', seo.index);
-    },
-    como: function(req, res) {
+    });
+    router.get('/index.html', function(req, res) {
+        res.render('index', seo.index);
+    });
+    router.get('/como-e-feito.html', function(req, res) {
         res.render('como-e-feito', seo.como);
-    },
-    onde: function(req, res) {
+    });
+    router.get('/onde-comprar.html', function(req, res) {
         res.render('onde-comprar', seo.onde);
-    },
-    cardapio: function(req, res) {
+    });
+    router.get('/cardapio.html', function(req, res) {
         res.render('cardapio', seo.cardapio);
-    },
-    maca: function(req, res) {
+    });
+    router.get('/strudel-de-maca.html', function(req, res) {
         res.render('strudel-de-maca', seo.maca);
-    },
-    leite: function(req, res) {
+    });
+    router.get('/strudel-de-doce-de-leite.html', function(req, res) {
         res.render('strudel-de-doce-de-leite', seo.leite);
-    },
-    banana: function(req, res) {
+    });
+    router.get('/strudel-de-banana.html', function(req, res) {
         res.render('strudel-de-banana', seo.banana);
-    },
-    frango: function(req, res) {
+    });
+    router.get('/strudel-de-frango-com-catupiry.html', function(req, res) {
         res.render('strudel-de-frango-com-catupiry', seo.frango);
-    },
-    palmito: function(req, res) {
+    });
+    router.get('/strudel-de-palmito.html', function(req, res) {
         res.render('strudel-de-palmito', seo.palmito);
-    },
-    apfelstrudel: function(req, res) {
-        res.render('apfelstrudel', seo.apfelstrudel);
-    },
-    bacalhau: function(req, res) {
+    });
+    router.get('/strudel-de-bacalhau.html', function(req, res) {
         res.render('strudel-de-bacalhau', seo.bacalhau);
-    },
-    chocolate: function(req, res) {
+    });
+    router.get('/strudel-de-chocolate.html', function(req, res) {
         res.render('strudel-de-chocolate', seo.chocolate);
-    },
-    mini: function(req, res) {
+    });
+    router.get('/apfelstrudel.html', function(req, res) {
+        res.render('apfelstrudel', seo.apfelstrudel);
+    });
+    router.get('/mini-strudel.html', function(req, res) {
         res.render('mini-strudel', seo.mini);
-    },
-    geo: function(req, res) {
+    });
+
+
+    redirect404.forEach(function(each){
+        router.get(each.from, function(req, res){
+            res.redirect(301, each.to);
+        });
+    });
+
+    router.get('/geo/:pos', function(req, res) {
         var pos = encodeURI(req.params.pos),
             options = {
                 host: "maps.google.com",
@@ -86,15 +101,16 @@ exports.router = {
         });
 
         request.end();
-    },
-    blog: function(req, res) {
+    });
+    router.get('/blog/?*', function(req, res) {
         res.redirect(301, '/index.html');
-    },
-    notFound: function(req, res) {
-        res.status(404);
-        res.render('404');
-    },
-    order: function(req, res) {
+    });
+    router.get('*', function(req, res) {
+        res.status(404).render('404');
+    });
+    router.post('/', function(req, res) {
         mail.send(req, res);
-    }
+    });
+
+    return router;
 };

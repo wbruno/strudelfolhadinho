@@ -2,3 +2,5 @@
 inc/config.inc.php
 node_modules
 mail.js
+newrelic_agent.log
+
