@@ -20,12 +20,12 @@ exports.products = {
             price: '60,00', url: '/strudel-de-chocolate.html',
             badge: 'selo-valor-strudel-60.png'
         }
-//        ,
-//        mini: {
-//            name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
-//            price: '3,00', url: '/mini-strudel.html',
-//            badge: 'selo-valor-strudel-3.png'
-//        }
+        ,
+        mini: {
+            name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
+            price: '3,00', url: '/mini-strudel.html',
+            badge: 'selo-valor-strudel-3.png'
+        }
     },
     savory: {
         palmito: {
