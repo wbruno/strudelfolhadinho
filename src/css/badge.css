@@ -36,3 +36,13 @@
             transform: scale(0.5);
   }
 }
+
+@media only screen and (max-width: 320px){
+  .badge {
+    -webkit-transform: scale(0.3);
+       -moz-transform: scale(0.3);
+        -ms-transform: scale(0.3);
+         -o-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+}
