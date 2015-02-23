@@ -1,31 +1,31 @@
 {
   "name": "strudelfolhadinho",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Strudel Folhadinho",
   "homepage": "http://strudelfolhadinho.com.br",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e js,hbs,html"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon -e js,hbs,html"
   },
   "main": "app.js",
   "dependencies": {
-    "body-parser": "^1.10.0",
-    "express": "^4.10.6",
-    "hbs": "^2.8.0",
-    "method-override": "^2.3.1",
-    "newrelic": "^1.16.4",
-    "nodemailer": "^0.6.5"
+  "body-parser": "^1.10.0",
+  "express": "^4.10.6",
+  "hbs": "^2.8.0",
+  "method-override": "^2.3.1",
+  "newrelic": "^1.16.4",
+  "nodemailer": "^0.6.5"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "serve-static": "^1.7.1"
+  "grunt": "~0.4.2",
+  "grunt-contrib-uglify": "~0.3.2",
+  "grunt-contrib-cssmin": "~0.7.0",
+  "grunt-contrib-watch": "~0.5.3",
+  "serve-static": "^1.7.1"
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:wbruno/strudelfolhadinho.git"
+  "type": "git",
+  "url": "git@github.com:wbruno/strudelfolhadinho.git"
   },
   "author": "William Bruno",
   "license": "ISC"

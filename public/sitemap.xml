@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-      xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+    xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+    xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
   <loc>http://strudelfolhadinho.com.br/</loc>
@@ -14,12 +14,12 @@
   <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>1.00</priority>
   <image:image>
-    <image:title>Logo Strudel Folhadinho</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/logo-strudel-folhadinho.png</image:loc>
+  <image:title>Logo Strudel Folhadinho</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/logo-strudel-folhadinho.png</image:loc>
   </image:image>
   <image:image>
-    <image:title>Fatia Strudel de Maçã</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-2.png</image:loc>
+  <image:title>Fatia Strudel de Maçã</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-2.png</image:loc>
   </image:image>
 </url>
 <url>
@@ -28,12 +28,12 @@
   <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.90</priority>
   <image:image>
-    <image:title>Fatia Strudel de Maçã</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-4.png</image:loc>
+  <image:title>Fatia Strudel de Maçã</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-4.png</image:loc>
   </image:image>
   <image:image>
-    <image:title>Strudel de Maçã foto pequena</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-thumb.jpg</image:loc>
+  <image:title>Strudel de Maçã foto pequena</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-maca-thumb.jpg</image:loc>
   </image:image>
 </url>
 <url>
@@ -42,20 +42,20 @@
   <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.80</priority>
   <image:image>
-    <image:title>Strudel de Doce de Leite</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-doce-de-leite.png</image:loc>
+  <image:title>Strudel de Doce de Leite</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-doce-de-leite.png</image:loc>
   </image:image>
   <image:image>
-    <image:title>Bola de Massa do Strudel</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel-2.jpg</image:loc>
+  <image:title>Bola de Massa do Strudel</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel-2.jpg</image:loc>
   </image:image>
   <image:image>
-    <image:title>Recheio do Strudel de Doce de Leite</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/recheando-strudel-de-doce-de-leite.jpg</image:loc>
+  <image:title>Recheio do Strudel de Doce de Leite</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/recheando-strudel-de-doce-de-leite.jpg</image:loc>
   </image:image>
   <image:image>
-    <image:title>Enrolando o strudel de doce de leite</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/fechando-strudel-doce-de-leite.jpg</image:loc>
+  <image:title>Enrolando o strudel de doce de leite</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/fechando-strudel-doce-de-leite.jpg</image:loc>
   </image:image>
 </url>
 <url>
@@ -64,12 +64,12 @@
   <lastmod>2013-03-21T09:55:00+00:00</lastmod>
   <priority>0.80</priority>
   <image:image>
-    <image:title>Strudel de Banana</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana.png</image:loc>
+  <image:title>Strudel de Banana</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana.png</image:loc>
   </image:image>
   <image:image>
-    <image:title>Strudel de Banana foto pequena</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana-thumb.jpg</image:loc>
+  <image:title>Strudel de Banana foto pequena</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana-thumb.jpg</image:loc>
   </image:image>
 </url>
 <url>
@@ -92,12 +92,12 @@
   <mobile:mobile/>
   <priority>0.55</priority>
   <image:image>
-    <image:title>Mini Strudel</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/mini-strudel.jpg</image:loc>
+  <image:title>Mini Strudel</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/mini-strudel.jpg</image:loc>
   </image:image>
   <image:image>
-    <image:title>Vários Mini Strudel</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/varios-mini-apfelstrudel.jpg</image:loc>
+  <image:title>Vários Mini Strudel</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/varios-mini-apfelstrudel.jpg</image:loc>
   </image:image>
 </url>
 <url>
@@ -110,16 +110,16 @@
   <mobile:mobile/>
   <priority>0.50</priority>
   <image:image>
-    <image:title>Bolas da Massa Folhada do Strudel</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel.jpg</image:loc>
+  <image:title>Bolas da Massa Folhada do Strudel</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel.jpg</image:loc>
   </image:image>
   <image:image>
-    <image:title>Preparo da massa folhada do Strudel de Maçã</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
+  <image:title>Preparo da massa folhada do Strudel de Maçã</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
   </image:image>
   <image:image>
-    <image:title>Tira de strudel de maçã antes de ir ao forno</image:title>
-    <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
+  <image:title>Tira de strudel de maçã antes de ir ao forno</image:title>
+  <image:loc>http://strudelfolhadinho.com.br/images/preparo-massa-aberta-do-strudel.jpg</image:loc>
   </image:image>
 </url>
 <url>
