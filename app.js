@@ -1,13 +1,13 @@
 require('newrelic');
-var express     = require('express'),
-  methodOverride  = require('method-override'),
-  bodyParser    = require('body-parser'),
-  hbs       = require('hbs'),
+var express         = require('express'),
+    methodOverride  = require('method-override'),
+    bodyParser      = require('body-parser'),
+    hbs             = require('hbs'),
 
-  router      = require('./router')(express),
-  products    = require('./products'),
+    router          = require('./router')(express),
+    products        = require('./products'),
 
-  app       = express();
+    app             = express();
 
 
 

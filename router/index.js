@@ -1,8 +1,8 @@
 module.exports = function(express) {
   var router    = express.Router();
-    seo     = require('./seo').seo,
-    mail    = require('./mail'),
-    http    = require('http'),
+    seo         = require('./seo').seo,
+    mail        = require('./mail'),
+    http        = require('http'),
     redirect404 = require('./redirect404').redirect;
 
   /**
