@@ -24,7 +24,7 @@ server {
     proxy_pass http://strudelfolhadinho;
   }
 
-  location ~* \.(?:ico|css|js|gif|jpe?g|png|ttf|woff|svg|eot)$ {
+  location ~* \.(?:ico|css|js|gif|jpe?g|png|ttf|woff|svg|eot|xml|txt)$ {
     access_log off;
     expires 30d;
     add_header Pragma public;
