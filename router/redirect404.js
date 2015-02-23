@@ -4,6 +4,10 @@ exports.redirect = [
     'to' : 'http://wbruno.com.br/placeholder/'
   },
   {
+    'from' : '/index.php',
+    'to' : '/'
+  },
+  {
     'from' : '/evento/review-intercondev-wordpress-2013/',
     'to' : 'http://wbruno.com.br/evento/review-intercondev-wordpress-2013/'
   },
