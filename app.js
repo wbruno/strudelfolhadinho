@@ -7,18 +7,26 @@ var express         = require('express'),
     router          = require('./router')(express),
     products        = require('./products'),
 
-    app             = express();
-
-
-
-hbs.registerPartials(__dirname + '/views/partials');
-hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
-
+    app             = express(),
+    fs              = require('fs');
 
 app.locals.products = products.products;
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.engine('html', hbs.__express);
+
+console.log('__dirname', __dirname);
+
+hbs.registerPartial('header', headerTemplate = fs.readFileSync(__dirname + '/views/partials/header.html', 'utf8'));
+hbs.registerPartial('midias', headerTemplate = fs.readFileSync(__dirname + '/views/partials/midias.html', 'utf8'));
+hbs.registerPartial('adcast', headerTemplate = fs.readFileSync(__dirname + '/views/partials/adcast.html', 'utf8'));
+hbs.registerPartial('footer', headerTemplate = fs.readFileSync(__dirname + '/views/partials/footer.html', 'utf8'));
+hbs.registerPartial('badge', headerTemplate = fs.readFileSync(__dirname + '/views/partials/badge.html', 'utf8'));
+hbs.registerPartial('contact_form', headerTemplate = fs.readFileSync(__dirname + '/views/partials/contact-form.html', 'utf8'));
+hbs.registerPartial('conversion', headerTemplate = fs.readFileSync(__dirname + '/views/partials/conversion.html', 'utf8'));
+
+hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
+
 
 // use
 if (app.get('env') === 'development'){
@@ -36,10 +44,5 @@ app.use(bodyParser.json());
 app.use('/', router);
 
 
-var server = app.listen(3002, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s, env', host, port, app.get('env'));
-});
+module.exports = app;
 

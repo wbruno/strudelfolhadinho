@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## 2015.03.13
+  * Unit tests
+
 ## 2015.02.23
   * Update dependencies
   * Add Palmito, Chocolate and Bacalhau photos
