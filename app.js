@@ -15,7 +15,6 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 app.engine('html', hbs.__express);
 
-console.log('__dirname', __dirname);
 
 hbs.registerPartial('header', headerTemplate = fs.readFileSync(__dirname + '/views/partials/header.html', 'utf8'));
 hbs.registerPartial('midias', headerTemplate = fs.readFileSync(__dirname + '/views/partials/midias.html', 'utf8'));
