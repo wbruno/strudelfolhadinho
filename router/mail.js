@@ -1,12 +1,7 @@
-var nodemailer = require("nodemailer");
+var nodemailer  = require('nodemailer'),
+    config      = require('config');
 
-var smtpTransport = nodemailer.createTransport("SMTP", {
-  service: "Gmail",
-  auth: {
-    user: "wbrunom@gmail.com",
-    pass: "quimica17"
-  }
-});
+var smtpTransport = nodemailer.createTransport('SMTP', config.get('smtp'));
 
 var mailOptions = {
   from: "No-Reply <wbrunom@gmail.com>", // sender address

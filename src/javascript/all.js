@@ -80,7 +80,6 @@
 
     Lib.ajax.getJSON({
       url: url,
-      type: 'jsonp'
     }, function (data) {
       var obj = JSON.parse(data);
 

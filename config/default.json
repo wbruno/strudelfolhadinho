@@ -1,0 +1,9 @@
+{
+  "smtp": {
+    "service": "Gmail",
+    "auth": {
+      "user": "wbrunom@gmail.com",
+      "pass": "quimica17"
+    }
+  }
+}
