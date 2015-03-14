@@ -5,5 +5,10 @@
       "user": "wbrunom@gmail.com",
       "pass": "quimica17"
     }
+  },
+
+  "newrelic": {
+    "app_name": ["Strudel Folhadinho - Site"],
+    "license_key": "c65ef1519a8c02bd05067b26c71972af2bbbe085"
   }
 }

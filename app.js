@@ -1,4 +1,9 @@
-require('newrelic');
+var config = require('config');
+/* istanbul ignore if */
+if (config.get('newrelic')) {
+  require('newrelic');
+}
+
 var express         = require('express'),
     methodOverride  = require('method-override'),
     bodyParser      = require('body-parser'),
@@ -27,7 +32,7 @@ hbs.registerPartial('conversion', headerTemplate = fs.readFileSync(__dirname + '
 hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
 
 
-// use
+/* istanbul ignore else */
 if (app.get('env') === 'development'){
   app.use(require('serve-static')('public/'));
 }
