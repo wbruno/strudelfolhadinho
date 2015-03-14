@@ -1,8 +1,9 @@
 module.exports = function(express) {
   var router    = express.Router();
+    http        = require('http'),
     seo         = require('./seo').seo,
     mail        = require('./mail'),
-    http        = require('http'),
+    geo         = require('./geo'),
     redirect404 = require('./redirect404').redirect;
 
   /**
@@ -51,66 +52,21 @@ module.exports = function(express) {
     res.render('mini-strudel', seo.mini);
   });
 
-
   redirect404.forEach(function(each){
     router.get(each.from, function(req, res){
       res.redirect(301, each.to);
     });
   });
 
-  router.get('/geo/:pos', function(req, res) {
-    var pos = encodeURI(req.params.pos),
-      options = {
-        host: "maps.google.com",
-        port: 80,
-        path: "/maps/api/geocode/json?address=" + pos + "&sensor=true"
-      };
+  router.get('/geo/:pos', geo.locate);
 
-
-    var request = http.request(options, function (response) {
-      var data = "";
-
-      response.setEncoding('utf8');
-      response.on('data', function (chunck) {
-        data += chunck;
-      });
-      response.on('end', function(){
-        res.writeHead(200, {'Content-Type': 'application/json'});
-
-        try {
-          var json = JSON.parse(data),
-            obj = json.results[0],
-            ret = {
-              address: obj.formatted_address.replace(/([^,]+)(.*)/, '$1'),
-              cep: obj.address_components[obj.address_components.length - 1].long_name
-            };
-
-          res.write(JSON.stringify(ret));
-
-        } catch(e) {
-          res.write(JSON.stringify({ address: "not_found" }));
-        }
-        res.end();
-      });
-
-    });
-    request.on('error', function(e) {
-      res.writeHead(200, {'Content-Type': 'application/json'});
-      res.write(JSON.stringify({ address: "not_found" }));
-      res.end();
-    });
-
-    request.end();
-  });
   router.get('/blog/?*', function(req, res) {
     res.redirect(301, '/index.html');
   });
   router.get('*', function(req, res) {
     res.status(404).render('404');
   });
-  router.post('/', function(req, res) {
-    mail.send(req, res);
-  });
+  router.post('/', mail.send);
 
   return router;
 };
