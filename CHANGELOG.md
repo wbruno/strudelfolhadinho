@@ -1,6 +1,11 @@
 # CHANGELOG
 
 
+## 2015.03.15
+  * Unit tests
+  * node-config
+  * Upgrade to nodejs 0.12.0
+
 ## 2015.03.13
   * Unit tests
 

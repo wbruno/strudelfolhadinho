@@ -1,6 +1,6 @@
 {
   "name": "strudelfolhadinho",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Strudel Folhadinho",
   "homepage": "http://strudelfolhadinho.com.br",
   "main": "./bin/www",
