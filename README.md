@@ -5,7 +5,7 @@
 [![GitHub release](https://img.shields.io/github/release/wbruno/strudelfolhadinho.svg)]()
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/wbruno/strudelfolhadinho/blob/master/LICENSE)
 
-## Technologies envolve in this project:
+## Technologies in this project:
 - Node.js 0.12.0
 - NodeMailer 0.6.5
 - Express 4.12.2
@@ -25,7 +25,7 @@ $ npm test
 
 
 ## Production
-Use the service locate on `scripts/folhadinho.sh` /etc/init.d/folhadinho
+Use the service located at `scripts/folhadinho.sh` into `/etc/init.d/folhadinho`
 
 ```
 $ service folhadinho
