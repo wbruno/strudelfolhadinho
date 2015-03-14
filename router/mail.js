@@ -10,9 +10,13 @@ var mailOptions = {
 }
 
 exports.send = function(req, res) {
-  var dados = req.body;
+  var dados = req.body,
+      sabores = '';
 
   if (dados.sobrenome === '') {
+    if (dados.sabor) {
+      sabores = dados.sabor.join(", ")
+    }
 
     mailOptions.text = dados.nome + ", cep: " + dados.cep + ", telefone: " + dados.telefone;
     mailOptions.html = "Olá, <br /><br />" +
@@ -22,7 +26,7 @@ exports.send = function(req, res) {
       "" + dados.numero + "<br />" +
       "<b>Email:</b> " + dados.email + "<br />" +
       "<b>Detalhes:</b> " + dados.detalhes + "<br />" +
-      "<b>Sabores: </b>" + dados.sabor.join(", ") + "<br /><br />" +
+      "<b>Sabores: </b>" + sabores + "<br /><br />" +
       "Att, <br />@Folhadinho";
 
     smtpTransport.sendMail(mailOptions, function(error, response){

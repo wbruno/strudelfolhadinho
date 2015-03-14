@@ -1,43 +1,53 @@
 (function () {
   "use strict";
   /*global window:false, document:false, XMLHttpRequest:false, location:false*/
-  var Lib = {};
 
-  Lib = {
-    ajax: {
-      xhr: function () {
-        var instance = new XMLHttpRequest();
-        return instance;
-      },
-      getJSON: function (options, callback) {
-        var xhttp = this.xhr();
-        options.url = options.url || location.href;
-        options.data = options.data || null;
-        callback = callback || function () {};
-        options.type = options.type || 'json';
-        var url = options.url;
+  window.XHR = {
+    _init: function () {
+      var instance = new XMLHttpRequest();
+      return instance;
+    },
 
+    post: function(options, callback) {
+      var xhttp = this._init();
+      callback = callback || function () {};
 
-        if (options.type === 'jsonp') {
-          window.jsonCallback = callback;
-          var $url = url.replace('callback=?', 'callback=jsonCallback');
-          var script = document.createElement('script');
-          script.src = $url;
-          document.body.appendChild(script);
+      xhttp.open('POST', options.url, true);
+      xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhttp.send(options.data);
+      xhttp.onreadystatechange = function () {
+        if (xhttp.status === 200 && xhttp.readyState === 4) {
+          callback(xhttp.responseText);
         }
-        xhttp.open('GET', options.url, true);
-        xhttp.send(options.data);
-        xhttp.onreadystatechange = function () {
-          if (xhttp.status === 200 && xhttp.readyState === 4) {
-            callback(xhttp.responseText);
-          }
-        };
+      };
+    },
+
+    getJSON: function (options, callback) {
+      var xhttp = this._init();
+      options.url = options.url || location.href;
+      callback = callback || function () {};
+      options.type = options.type || 'json';
+      var url = options.url;
+
+
+      if (options.type === 'jsonp') {
+        window.jsonCallback = callback;
+        var $url = url.replace('callback=?', 'callback=jsonCallback');
+        var script = document.createElement('script');
+        script.src = $url;
+        document.body.appendChild(script);
       }
+      xhttp.open('GET', options.url, true);
+      xhttp.send();
+      xhttp.onreadystatechange = function () {
+        if (xhttp.status === 200 && xhttp.readyState === 4) {
+          callback(xhttp.responseText);
+        }
+      };
     }
   };
-  window.Lib = Lib;
 }());
-(function (w, d, undefined) {
+(function (window, document, undefined) {
   "use strict";
 
   /*global _gaq:false, alert:false, navigator:false*/
@@ -45,7 +55,7 @@
   /* mascaras er */
   var v_obj, v_fun;
   function getId(el) {
-    return d.getElementById(el);
+    return document.getElementById(el);
   }
   function execmascara() {
     v_obj.value = v_fun(v_obj.value);
@@ -53,7 +63,7 @@
   function mascara(o, f) {
     v_obj = o;
     v_fun = f;
-    w.setTimeout(execmascara, 1);
+    window.setTimeout(execmascara, 1);
   }
   function mcep(v) {
     v = v.replace(/\D/g, "");
@@ -78,13 +88,13 @@
 
     $cep.value = 'Procurando..';
 
-    Lib.ajax.getJSON({
-      url: url,
+    XHR.getJSON({
+      url: url
     }, function (data) {
-      var obj = JSON.parse(data);
+      var json = JSON.parse(data);
 
-      $address.innerHTML = obj.address;
-      $cep.value = obj.cep;
+      $address.innerHTML = json.address;
+      $cep.value = json.cep;
     });
   }
   function switchTag(e, toTag) {
@@ -94,15 +104,20 @@
   }
 
   /* bind eventos */
-  w.onload = function () {
-    var $telefone = getId('telefone'),
+  window.onload = function () {
+    var $nome = getId('nome'),
+      $sobrenome = getId('sobrenome'),
+      $telefone = getId('telefone'),
       $cep = getId('cep'),
+      $numero = getId('numero'),
       $email = getId('email'),
+      $detalhes = getId('detalhes'),
+      $sabores = document.querySelectorAll('input[name="sabor[]"]'),
 
-      $tweet = d.querySelector('.tweet'),
-      $like = d.querySelector('.like'),
-      $youtube = d.querySelector('.youtube'),
-      $gplus = d.querySelector('.gplus'),
+      $tweet = document.querySelector('.tweet'),
+      $like = document.querySelector('.like'),
+      $youtube = document.querySelector('.youtube'),
+      $gplus = document.querySelector('.gplus'),
 
       $address = getId('address'),
       $geo = getId('js-geo'),
@@ -110,10 +125,10 @@
       $form = getId('form'),
       $noResponsive = getId('no-responsive');
 
-
+    $sabores = [].slice.call($sabores);
 
     $noResponsive.onclick = function () {
-      var vps = d.querySelectorAll("meta[name='viewport']");
+      var vps = document.querySelectorAll("meta[name='viewport']");
       vps[0].content = 'width=960px,initial-scale=0.3,user-scalable=yes';
     };
 
@@ -142,7 +157,9 @@
     $geo.onclick = function () {
       navigator.geolocation.getCurrentPosition(success, error);
     };
-    $form.onsubmit = function () {
+    $form.onsubmit = function (event) {
+      event.preventDefault();
+
       if ($telefone.value === '') {
         alert('Digite seu telefone para que eu possa te ligar e confirmar teu pedido!!');
         $telefone.focus();
@@ -158,11 +175,38 @@
         $email.focus();
         return false;
       }
+
+      var data = 'nome=' + $nome.value +
+            '&sobrenome=' + $sobrenome.value +
+            '&telefone=' + $telefone.value +
+            '&cep=' + $cep.value +
+            '&numero=' + $numero.value +
+            '&email=' + $email.value +
+            '&detalhes=' + $detalhes.value;
+
+      $sabores.forEach(function($sabor){
+        if ($sabor.checked) {
+          data += '&sabor[]=' + $sabor.value;
+        }
+      });
+
+      XHR.post({
+        url: $form.getAttribute('action'),
+        data: data
+      }, function (data) {
+        var json = JSON.parse(data);
+
+        if(json.status === 'ok') {
+          alert('Tudo certo! já já lhe enviaremos um email para combinar a data de entrega.');
+        } else {
+          alert('Por favor tente novamente, ou nos peça por email strudelfolhadinho@gmail.com');
+        }
+      });
     };
 
 
     /* hack abrindo em "full" para mobile */
-    w.scrollTo(0, 1);
+    window.scrollTo(0, 1);
 
     /* transformando span#phone em tag a */
     $phone.setAttribute('href', getId('phone').getAttribute('data-href'));
