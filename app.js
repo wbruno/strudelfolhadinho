@@ -21,13 +21,13 @@ app.set('views', __dirname + '/views');
 app.engine('html', hbs.__express);
 
 
-hbs.registerPartial('header', headerTemplate = fs.readFileSync(__dirname + '/views/partials/header.html', 'utf8'));
-hbs.registerPartial('midias', headerTemplate = fs.readFileSync(__dirname + '/views/partials/midias.html', 'utf8'));
-hbs.registerPartial('adcast', headerTemplate = fs.readFileSync(__dirname + '/views/partials/adcast.html', 'utf8'));
-hbs.registerPartial('footer', headerTemplate = fs.readFileSync(__dirname + '/views/partials/footer.html', 'utf8'));
-hbs.registerPartial('badge', headerTemplate = fs.readFileSync(__dirname + '/views/partials/badge.html', 'utf8'));
-hbs.registerPartial('contact_form', headerTemplate = fs.readFileSync(__dirname + '/views/partials/contact-form.html', 'utf8'));
-hbs.registerPartial('conversion', headerTemplate = fs.readFileSync(__dirname + '/views/partials/conversion.html', 'utf8'));
+hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/partials/header.html', 'utf8'));
+hbs.registerPartial('midias', fs.readFileSync(__dirname + '/views/partials/midias.html', 'utf8'));
+hbs.registerPartial('adcast', fs.readFileSync(__dirname + '/views/partials/adcast.html', 'utf8'));
+hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/partials/footer.html', 'utf8'));
+hbs.registerPartial('badge', fs.readFileSync(__dirname + '/views/partials/badge.html', 'utf8'));
+hbs.registerPartial('contact_form', fs.readFileSync(__dirname + '/views/partials/contact-form.html', 'utf8'));
+hbs.registerPartial('conversion', fs.readFileSync(__dirname + '/views/partials/conversion.html', 'utf8'));
 
 hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
 
