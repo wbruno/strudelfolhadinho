@@ -4,6 +4,7 @@ module.exports = function(express) {
     seo         = require('./seo').seo,
     mail        = require('./mail'),
     geo         = require('./geo'),
+    moment      = require('moment'),
     redirect404 = require('./redirect404').redirect;
 
   /**
@@ -55,6 +56,18 @@ module.exports = function(express) {
   redirect404.forEach(function(each){
     router.get(each.from, function(req, res){
       res.redirect(301, each.to);
+    });
+  });
+
+  router.get('/telephone', function(req, res) {
+    var now = moment(),
+        until = moment('11:59am', 'h:mma');
+
+    res.json({
+      now: now,
+      until: until,
+      before: now.isBefore(until),
+      telephone: now.isBefore(until) ? '(11) 3782-2391' : '(11) 9 6309-9227'
     });
   });
 

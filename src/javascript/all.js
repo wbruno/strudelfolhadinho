@@ -204,6 +204,13 @@
       });
     };
 
+    /* changing the telephone acording to the day hour */
+    XHR.getJSON({
+      url: '/telephone'
+    }, function (data) {
+      var json = JSON.parse(data);
+      $phone.innerHTML = '<i class="ico-phone"></i>' + json.telephone;
+    });
 
     /* hack abrindo em "full" para mobile */
     window.scrollTo(0, 1);
