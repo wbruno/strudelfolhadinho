@@ -15,8 +15,11 @@ exports.products = {
     chocolate: {
       name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate meio amargo, açúcar.',
       price: '60,00', url: '/strudel-de-chocolate.html'
-    }
-    ,
+    },
+    cereja: {
+      name: 'Strudel de Cereja', description: 'Massa Folhada, cereja, açúcar.',
+      price: '115,00', url: '/strudel-de-cereja.html'
+    },
     mini: {
       name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
       price: '3,50', url: '/mini-strudel.html'
