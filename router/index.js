@@ -79,9 +79,6 @@ module.exports = function(express) {
   router.get('/blog/?*', function(req, res) {
     res.redirect(301, '/index.html');
   });
-  router.get('*', function(req, res) {
-    res.status(404).render('404');
-  });
   router.post('/', mail.send);
 
   return router;

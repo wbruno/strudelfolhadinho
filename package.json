@@ -5,7 +5,8 @@
   "homepage": "http://strudelfolhadinho.com.br",
   "main": "./bin/www",
   "scripts": {
-    "start": "nodemon -e js,hbs,html ./bin/www",
+    "start": "node ./bin/www",
+    "nodemon": "nodemon -e js,hbs,html ./bin/www",
     "test": "node_modules/istanbul/lib/cli.js cover node_modules/.bin/_mocha tests/*"
   },
   "dependencies": {

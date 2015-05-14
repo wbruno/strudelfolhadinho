@@ -46,7 +46,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/', router);
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  res.status(404).render('404', {
+    title: 'Página não encontrada'
+  });
+});
 
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500).render('error', {
+    message: err.message,
+    error: {}
+  });
+});
 
 module.exports = app;
 
