@@ -32,10 +32,7 @@ hbs.registerPartial('conversion', fs.readFileSync(__dirname + '/views/partials/c
 hbs.registerPartial('phoneNumber', '(11) 9 6309-9227');
 
 
-/* istanbul ignore else */
-if (app.get('env') === 'development'){
-  app.use(require('serve-static')('public/'));
-}
+app.use(require('serve-static')('public/'));
 
 app.use(methodOverride('X-HTTP-Method'));
 app.use(methodOverride('X-HTTP-Method-Override'));
