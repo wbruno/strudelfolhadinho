@@ -46,8 +46,8 @@ module.exports = function(express) {
   router.get('/strudel-de-chocolate.html', function(req, res) {
     res.render('strudel-de-chocolate', seo.chocolate);
   });
-  router.get('/strudel-de-cereja.html', function(req, res) {
-    res.render('strudel-de-cereja', seo.cereja);
+  router.get('/strudel-de-uva-rosada.html', function(req, res) {
+    res.render('strudel-de-uva-rosada', seo.uvarosada);
   });
   router.get('/apfelstrudel.html', function(req, res) {
     res.render('apfelstrudel', seo.apfelstrudel);

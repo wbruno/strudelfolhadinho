@@ -44,6 +44,10 @@ exports.redirect = [
     'to': '/apfelstrudel.html'
   },
   {
+    'from': '/strudel-de-cereja.html',
+    'to': '/strudel-de-uva-rosada.html'
+  },
+  {
     'from': '/admin/pedidos.php',
     'to': '/'
   }

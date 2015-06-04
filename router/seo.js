@@ -54,10 +54,10 @@ exports.seo = {
       title: 'Strudel de Chocolate | ' + seodefault.title,
       canonical: seodefault.url + '/strudel-de-chocolate.html'
   },
-  cereja: {
-      description: 'Compre o nosso novo sabor: Strudel de Cereja. ' + seodefault.description,
-      title: 'Strudel de Cereja | ' + seodefault.title,
-      canonical: seodefault.url + '/strudel-de-cereja.html'
+  uvarosada: {
+      description: 'Compre o nosso novo sabor: Strudel de Uva Rosada. ' + seodefault.description,
+      title: 'Strudel de Uva Rosada | ' + seodefault.title,
+      canonical: seodefault.url + '/strudel-de-uva-rosada.html'
   },
   mini: {
       description: 'Encomende mini strudel para a sua festa, fazemos entregas e preços especiais para buffets. Consulte os valores no atacado para mini strudel',

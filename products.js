@@ -1,7 +1,7 @@
 exports.products = {
   sweet: {
     maca: {
-      name: 'Strudel de Maçã', description: 'Massa Folhada, maçã verde, uvas passas, canela da china, cravo e açúcar.',
+      name: 'Strudel de Maçã', description: 'Massa Folhada, maçã verde, uva passas, canela da china, cravo e açúcar.',
       price: '60,00', url: '/strudel-de-maca.html'
     },
     leite: {
@@ -16,9 +16,9 @@ exports.products = {
       name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate meio amargo, açúcar.',
       price: '60,00', url: '/strudel-de-chocolate.html'
     },
-    cereja: {
-      name: 'Strudel de Cereja', description: 'Massa Folhada, cereja, açúcar.',
-      price: '115,00', url: '/strudel-de-cereja.html'
+    uvarosada: {
+      name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, canela e açúcar.',
+      price: '95,00', url: '/strudel-de-uva-rosada.html'
     },
     mini: {
       name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
