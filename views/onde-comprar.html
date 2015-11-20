@@ -1,4 +1,6 @@
-{{> header }}
+{% extends "main.html" %}
+
+{% block content %}
 
 <article id="main">
   <aside id="how-buy" class="above" role="complementary">
@@ -27,17 +29,17 @@
 
     <h2 class="column-full">Encomende sua sobremesa</h2>
     <p class="column-full">Encomende os seguintes sabores de strudel:
-{{#each products.sweet}}
-  <span class="purple product-name">{{name}}</span>,
-{{/each}}.
+{% for product in products.sweet %}
+  <span class="purple product-name">{{product.name}}</span>,
+{% endfor %}.
     </p>
 
     <h2 class="column-full">Encomende estas delícias</h2>
     <p class="column-full">
-{{#each products.savory}}
-  <span class="purple product-name">{{name}}</span>,
-{{/each}}.
+{% for product in products.savory %}
+  <span class="purple product-name">{{product.name}}</span>,
+{% endfor %}.
     </p>
   </div>
 </article><!-- #main -->
-{{> footer }}
+{% endblock %}

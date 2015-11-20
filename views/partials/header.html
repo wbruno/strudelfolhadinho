@@ -76,9 +76,9 @@
       <img src="/images/logo-strudel-folhadinho.png" alt="Logo Strudel Folhadinho" title="Strudel Folhadinho" class="logo-img" width="271" height="108" />
     </a>
     <section id="header-strip" class="fright cf">
-{{> midias }}
+{% include "./midias.html" %}
 
-      <span id="phone" class="fright" title="ligue {{> phoneNumber}}"><i class="ico-phone"></i>{{> phoneNumber}}</span>
+      <span id="phone" class="fright" title="ligue {{phoneNumber}}"><i class="ico-phone"></i>{{phoneNumber}}</span>
       <p class="header-strip-delivery fright">Entregamos na cidade de São Paulo</p>
     </section><!-- #header-strip -->
     <nav id="nav" role="navigation" class="fright">

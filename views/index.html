@@ -1,5 +1,8 @@
-{{> header }}
-{{> adcast }}
+{% extends "main.html" %}
+
+{% block content %}
+
+{% include "partials/adcast.html" %}
 <article id="main">
   <div id="content" class="content column-full cf" role="main">
     <div class="column-half">
@@ -43,4 +46,4 @@
 
   </div><!-- .content -->
 </article><!-- #content -->
-{{> footer }}
+{% endblock %}

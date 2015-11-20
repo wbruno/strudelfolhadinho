@@ -1,23 +1,23 @@
 exports.products = {
   sweet: {
     maca: {
-      name: 'Strudel de Maçã', description: 'Massa Folhada, maçã verde, uva passas, canela da china, cravo e açúcar.',
+      name: 'Strudel de Maçã', description: 'Massa Folhada, maçã verde, uva passas, canela da china, castanha de cajú, cravo e açúcar.',
       price: '60,00', url: '/strudel-de-maca.html'
     },
     leite: {
-      name: 'Strudel de Doce de Leite', description: 'Massa Folhada e doce de leite.',
+      name: 'Strudel de Doce de Leite', description: 'Massa Folhada, uva passas, castanha de cajú e doce de leite.',
       price: '60,00', url: '/strudel-de-doce-de-leite.html'
     },
     banana: {
-      name: 'Strudel de Banana', description: 'Massa Folhada, banana, canela da china, cravo e açúcar.',
+      name: 'Strudel de Banana', description: 'Massa Folhada, banana, uva passas, canela da china, castanha de cajú, cravo e açúcar.',
       price: '50,00', url: '/strudel-de-banana.html'
     },
     chocolate: {
-      name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate meio amargo, açúcar.',
+      name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate ao leite, chocolate meio amargo, uva passas, castanha de cajú e açúcar.',
       price: '60,00', url: '/strudel-de-chocolate.html'
     },
     uvarosada: {
-      name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, canela e açúcar.',
+      name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, uva passas, castanha de cajú, canela da china, cravo e açúcar.',
       price: '95,00', url: '/strudel-de-uva-rosada.html'
     },
     mini: {
@@ -27,15 +27,15 @@ exports.products = {
   },
   savory: {
     palmito: {
-      name: 'Strudel de Palmito', description: 'Massa Folhada, palmito, molho bechamel.',
+      name: 'Strudel de Palmito', description: 'Massa Folhada, palmito e molho bechamel.',
       price: '75,00', url: '/strudel-de-palmito.html'
     },
     frango: {
-      name: 'Strudel de Frango com Catupiry', description: 'Massa Folhada, frango desfiado, requeijão da marca Catupiry.',
+      name: 'Strudel de Frango com Catupiry', description: 'Massa Folhada, frango desfiado e requeijão da marca Catupiry.',
       price: '75,00', url: '/strudel-de-frango-com-catupiry.html'
     },
     bacalhau: {
-      name: 'Strudel de Bacalhau', description: 'Massa Folhada, bacalhau desfiado, molho bechamel.',
+      name: 'Strudel de Bacalhau', description: 'Massa Folhada, bacalhau desfiado e purê de batatas.',
       price: '115,00', url: '/strudel-de-bacalhau.html'
     }
   }

@@ -1,8 +1,8 @@
-{{> contact_form }}
+{% include "./contact-form.html" %}
 
 <footer id="footer">
   <div class="column-full content cf">
-    {{> midias }}
+    {% include "./midias.html" %}
 
     <section itemscope itemtype="http://schema.org/LocalBusiness" class="fleft">
       <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
@@ -11,7 +11,7 @@
         <small itemprop="addressRegion">SP</small>
       </div>
       Telefone: <span itemprop="telephone">
-          <span title="ligue {{> phoneNumber}}">{{> phoneNumber}}</span>
+          <span title="ligue {{phoneNumber}}">{{phoneNumber}}</span>
       </span> -
       <span> strudelfolhadinho@gmail.com</span>
     </section><!-- .column-full -->
@@ -24,6 +24,6 @@
   </div>
 </footer><!-- #footer -->
 
-{{> conversion }}
+{% include "./conversion.html" %}
 </body>
 </html>

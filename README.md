@@ -1,12 +1,11 @@
 # Strudel Folhadinho - Site
 
 [![Build Status](https://travis-ci.org/wbruno/strudelfolhadinho.svg?branch=master)](https://travis-ci.org/wbruno/strudelfolhadinho)
-[![node](https://img.shields.io/badge/node-0.12.0-brightgreen.svg)]()
+[![node](https://img.shields.io/badge/node-5.1.0-brightgreen.svg)]()
 [![GitHub release](https://img.shields.io/github/release/wbruno/strudelfolhadinho.svg)]()
 [![License](http://img.shields.io/:license-mit-blue.svg)](https://github.com/wbruno/strudelfolhadinho/blob/master/LICENSE)
 
 ## Technologies in this project:
-- Node.js 0.12.0
 - NodeMailer 0.6.5
 - Express 4.12.2
 
