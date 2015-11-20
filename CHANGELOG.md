@@ -1,6 +1,11 @@
 # CHANGELOG
 
 
+## 2015.11.19
+  * Changed hbs for nunjucks
+  * Improve strudels descriptions on menu
+  * Updated to NodeJS 5.1
+
 ## 2015.03.15
   * Unit tests
   * node-config
