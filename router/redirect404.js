@@ -24,6 +24,14 @@ exports.redirect = [
     'to': 'http://wbruno.com.br/css/object-oriented-css-a-teoria-das-classes-reutilizaveis-oocss/'
   },
   {
+    'from': '/2011/*',
+    'to': 'http://wbruno.com.br/'
+  },
+  {
+    'from': '/scripts/*|/placeholder/*',
+    'to': 'http://wbruno.com.br/'
+  },
+  {
     'from': '/css/tabela-zebrada-css-3/',
     'to': 'http://wbruno.com.br/css/tabela-zebrada-css-3/'
   },
