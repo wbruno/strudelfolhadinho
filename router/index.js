@@ -4,7 +4,7 @@ module.exports = function(express) {
     seo         = require('./seo').seo,
     mail        = require('./mail'),
     geo         = require('./geo'),
-    moment      = require('moment'),
+    moment      = require('moment-timezone'),
     redirect404 = require('./redirect404').redirect;
 
   /**
@@ -63,8 +63,8 @@ module.exports = function(express) {
   });
 
   router.get('/telephone', function(req, res) {
-    var now = moment(),
-        until = moment('11:59am', 'h:mma');
+    var now = moment().tz('America/Sao_Paulo'),
+        until = moment(now.format('YYYY-MM-DD') + 'T13:59:00Z').tz('America/Sao_Paulo');
 
     res.json({
       now: now,
