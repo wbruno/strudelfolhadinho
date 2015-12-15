@@ -1,7 +1,7 @@
 var nodemailer  = require('nodemailer'),
     config      = require('config');
 
-var smtpTransport = nodemailer.createTransport('SMTP', config.get('smtp'));
+var smtpTransport = nodemailer.createTransport(config.get('smtp'));
 
 var mailOptions = {
   from: "No-Reply <wbrunom@gmail.com>", // sender address
