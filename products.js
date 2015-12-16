@@ -20,10 +20,10 @@ exports.products = {
       name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, uva passas, castanha de cajú, canela da china, cravo e açúcar.',
       price: '95,00', url: '/strudel-de-uva-rosada.html'
     },
-    mini: {
-      name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
-      price: '3,50', url: '/mini-strudel.html'
-    }
+    // mini: {
+    //   name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
+    //   price: '3,50', url: '/mini-strudel.html'
+    // }
   },
   savory: {
     palmito: {
