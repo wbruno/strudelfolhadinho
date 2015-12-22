@@ -34,9 +34,9 @@ exports.products = {
       name: 'Strudel de Frango com Catupiry', description: 'Massa Folhada, frango desfiado e requeijão da marca Catupiry.',
       price: '75,00', url: '/strudel-de-frango-com-catupiry.html'
     },
-    bacalhau: {
-      name: 'Strudel de Bacalhau', description: 'Massa Folhada, bacalhau desfiado e purê de batatas.',
-      price: '115,00', url: '/strudel-de-bacalhau.html'
-    }
+    // bacalhau: {
+    //   name: 'Strudel de Bacalhau', description: 'Massa Folhada, bacalhau desfiado e purê de batatas.',
+    //   price: '115,00', url: '/strudel-de-bacalhau.html'
+    // }
   }
 };
