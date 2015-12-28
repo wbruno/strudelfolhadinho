@@ -224,13 +224,3 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
 @media only screen and (max-width: 320px){
   .input-small { width: 83%; }
 }
-@media print {
-  .content { width: auto; }
-  #form-action,
-  #footer { display: none; }
-
-  a:after {
-    content: " - ( " attr(href) " )";
-    font-size: 0.7em;
-  }
-}

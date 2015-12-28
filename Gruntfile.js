@@ -28,7 +28,8 @@ module.exports = function (grunt) {
             'src/css/contact-form.css',
             'src/css/header.css',
             'src/css/footer.css',
-            'src/css/main.css'
+            'src/css/main.css',
+            'src/css/print.css'
           ]
         }
       }

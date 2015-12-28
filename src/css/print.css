@@ -1,0 +1,14 @@
+@media print {
+  #nav,
+  #header-strip
+    { display: none; }
+
+  .content { width: auto; }
+  #form-action,
+  #footer { display: none; }
+
+  a:after {
+    content: " - ( " attr(href) " )";
+    font-size: 0.7em;
+  }
+}
