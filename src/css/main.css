@@ -151,7 +151,7 @@ p.itemreviewed { width: 180px; font-size: 0.7em; }
   #phone { font-size: 1em; }
 
   #nav { margin-top: 0; float: none; overflow: hidden; clear: both; }
-  .nav-link { width: 33.333%; text-align: center; margin-right: 0; }
+  .nav-link { width: 25%; text-align: center; margin-right: 0; }
   .nav-link a { width: 100%; padding: 0; display: block; border: none; }
 }
 @media only screen and (max-width: 920px){
