@@ -70,7 +70,7 @@ module.exports = function(express) {
       now: now,
       until: until,
       before: now.isBefore(until),
-      telephone: now.isBefore(until) ? '(11) 3782-2391' : '(11) 9 6309-9227'
+      telephone: now.isBefore(until) ? '(11) 3782-2391' : '(11) 3782-2391'
     });
   });
 
