@@ -9,6 +9,7 @@ var express         = require('express'),
     bodyParser      = require('body-parser'),
     nunjucks        = require('nunjucks'),
     compression     = require('compression'),
+    minifyHTML      = require('express-minify-html'),
 
     router          = require('./router')(express),
     products        = require('./products'),
@@ -38,6 +39,18 @@ app.use(methodOverride('_method'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(minifyHTML({
+  override:      true,
+  htmlMinifier: {
+    removeComments:            true,
+    collapseWhitespace:        true,
+    collapseBooleanAttributes: true,
+    removeAttributeQuotes:     true,
+    removeEmptyAttributes:     true,
+    minifyJS:                  true
+  }
+}));
 
 app.use('/', router);
 // catch 404 and forward to error handler
