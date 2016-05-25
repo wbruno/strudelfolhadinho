@@ -8,6 +8,7 @@ var express         = require('express'),
     methodOverride  = require('method-override'),
     bodyParser      = require('body-parser'),
     nunjucks        = require('nunjucks'),
+    compression     = require('compression'),
 
     router          = require('./router')(express),
     products        = require('./products'),
@@ -26,6 +27,8 @@ nunjucks.configure('views', {
   tags: ''
 });
 
+
+app.use(compression());
 app.use(require('serve-static')('public/'));
 
 app.use(methodOverride('X-HTTP-Method'));
