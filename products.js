@@ -16,10 +16,10 @@ exports.products = {
       name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate ao leite, chocolate meio amargo, uva passas, castanha de cajú e açúcar.',
       price: '70,00', url: '/strudel-de-chocolate.html'
     },
-    // uvarosada: {
-    //   name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, uva passas, castanha de cajú, canela da china, cravo e açúcar.',
-    //   price: '100,00', url: '/strudel-de-uva-rosada.html'
-    // },
+    uvarosada: {
+      name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, uva passas, castanha de cajú, canela da china, cravo e açúcar.',
+      price: '85,00', url: '/strudel-de-uva-rosada.html'
+    },
     mini: {
       name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
       price: '4,00', url: '/mini-strudel.html'
