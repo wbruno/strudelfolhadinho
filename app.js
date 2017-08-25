@@ -18,7 +18,7 @@ var express         = require('express'),
 
 
 app.locals.products = products.products;
-app.locals.phoneNumber = '(11) 9 6309-9227';
+app.locals.phoneNumber = '(11) 9 7441-9394';
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
