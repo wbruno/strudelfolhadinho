@@ -22,7 +22,7 @@ exports.products = {
     },
     mini: {
       name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
-      price: '4,00', url: '/mini-strudel.html'
+      price: '4,50', url: '/mini-strudel.html'
     }
   },
   savory: {
