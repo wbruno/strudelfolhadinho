@@ -2,19 +2,19 @@ exports.products = {
   sweet: {
     maca: {
       name: 'Strudel de Maçã', description: 'Massa Folhada, maçã verde, uva passas, canela da china, castanha de cajú, cravo e açúcar.',
-      price: '70,00', url: '/strudel-de-maca.html'
+      price: '85,00', url: '/strudel-de-maca.html'
     },
     leite: {
       name: 'Strudel de Doce de Leite', description: 'Massa Folhada, uva passas, castanha de cajú e doce de leite.',
-      price: '70,00', url: '/strudel-de-doce-de-leite.html'
+      price: '85,00', url: '/strudel-de-doce-de-leite.html'
     },
     banana: {
       name: 'Strudel de Banana', description: 'Massa Folhada, banana, uva passas, canela da china, castanha de cajú, cravo e açúcar.',
-      price: '55,00', url: '/strudel-de-banana.html'
+      price: '70,00', url: '/strudel-de-banana.html'
     },
     chocolate: {
       name: 'Strudel de Chocolate', description: 'Massa Folhada, chocolate ao leite, chocolate meio amargo, uva passas, castanha de cajú e açúcar.',
-      price: '70,00', url: '/strudel-de-chocolate.html'
+      price: '85,00', url: '/strudel-de-chocolate.html'
     },
     uvarosada: {
       name: 'Strudel de Uva Rosada', description: 'Massa Folhada, uva rosada, uva passas, castanha de cajú, canela da china, cravo e açúcar.',
