@@ -24,8 +24,8 @@ exports.products = {
       name: 'Mini Strudel', description: 'Todo o sabor do Strudel de Maçã em tamanho mini, individual',
       price: '6,00', url: '/mini-strudel.html'
     },
-    mini: {
-      name: 'Mini Strudel de Banana', description: 'Todo o sabor do Strudel de Banana em tamanho mini, individual',
+    miniNutela: {
+      name: 'Mini Strudel de Banana', description: 'Todo o sabor da Nutela em strudel tamanho mini, individual',
       price: '7,00', url: '/mini-strudel.html'
     }
   },
