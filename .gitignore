@@ -1,6 +1,2 @@
 .DS_Store
-coverage
-inc/config.inc.php
-newrelic_agent.log
 node_modules
-

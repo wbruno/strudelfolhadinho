@@ -5,7 +5,8 @@
 
 To start nodemon:
 ```
-$ npm start
+npm start
+npx gulp
 ```
 
 go to <http://localhost:8080>

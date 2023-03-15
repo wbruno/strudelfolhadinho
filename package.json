@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "description": "Strudel Folhadinho",
   "homepage": "http://strudelfolhadinho.com.br",
-  "main": "Gruntfile.js",
+  "main": "gulpfile.js",
   "scripts": {
     "start": "npx http-server public",
     "test": "echo 'do nothing'"
@@ -12,10 +12,11 @@
     "http-serve": "1.0.1"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-uglify": "^0.10.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "gulp": "4.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-uglify": "3.0.2",
+    "gulp-util": "^3.0.7"
   },
   "engines": {
     "node": "18.0.0"
