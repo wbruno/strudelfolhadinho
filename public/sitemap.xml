@@ -11,7 +11,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/</loc>
   <mobile:mobile/>
-  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
+  <lastmod>2023-03-15</lastmod>
   <priority>1.00</priority>
   <image:image>
   <image:title>Logo Strudel Folhadinho</image:title>
@@ -25,7 +25,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-maca.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
+  <lastmod>2023-03-15</lastmod>
   <priority>0.90</priority>
   <image:image>
   <image:title>Fatia Strudel de Maçã</image:title>
@@ -39,8 +39,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-doce-de-leite.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-03-15</lastmod>
   <image:image>
   <image:title>Strudel de Doce de Leite</image:title>
   <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-doce-de-leite.png</image:loc>
@@ -61,8 +60,7 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-banana.html</loc>
   <mobile:mobile/>
-  <lastmod>2013-03-21T09:55:00+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2023-03-15</lastmod>
   <image:image>
   <image:title>Strudel de Banana</image:title>
   <image:loc>http://strudelfolhadinho.com.br/images/strudel-de-banana.png</image:loc>
@@ -80,17 +78,17 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-bacalhau.html</loc>
   <mobile:mobile/>
-  <priority>0.55</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/apfelstrudel.html</loc>
   <mobile:mobile/>
-  <priority>0.55</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/mini-strudel.html</loc>
   <mobile:mobile/>
-  <priority>0.55</priority>
+  <lastmod>2023-03-15</lastmod>
   <image:image>
   <image:title>Mini Strudel</image:title>
   <image:loc>http://strudelfolhadinho.com.br/images/mini-strudel.jpg</image:loc>
@@ -103,17 +101,17 @@
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-frango-com-catupiry.html</loc>
   <mobile:mobile/>
-  <priority>0.60</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/strudel-de-uva-rosada.html</loc>
   <mobile:mobile/>
-  <priority>0.70</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/como-e-feito.html</loc>
   <mobile:mobile/>
-  <priority>0.50</priority>
+  <lastmod>2023-03-15</lastmod>
   <image:image>
   <image:title>Bolas da Massa Folhada do Strudel</image:title>
   <image:loc>http://strudelfolhadinho.com.br/images/bolas-massa-strudel.jpg</image:loc>
@@ -129,10 +127,10 @@
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/onde-comprar.html</loc>
-  <priority>0.30</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 <url>
   <loc>http://strudelfolhadinho.com.br/cardapio.html</loc>
-  <priority>0.30</priority>
+  <lastmod>2023-03-15</lastmod>
 </url>
 </urlset>
